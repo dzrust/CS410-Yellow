@@ -1,0 +1,19 @@
+{
+  "name": "cs410-yellow",
+  "version": "1.0.0",
+  "description": "CS 410 - Public Restrooms Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dzrust/CS410-Yellow.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dzrust/CS410-Yellow/issues"
+  },
+  "homepage": "https://github.com/dzrust/CS410-Yellow#readme"
+}
