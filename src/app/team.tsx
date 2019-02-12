@@ -5,7 +5,7 @@ const teamMemberDataRow1 = [
         name: 'Daniel Zrust',
         picture: 'https://www.cs.odu.edu/~410yello/images/DanielZrustPhoto.jpg',
         title: 'Engineer',
-        bio: 'Drummer, video game player, father, husband, and general programming enthusiast. CS major in his senior year, and expected to graduate in Fall 2019. Daniel works fulltime at <a href="https://bombbomb.com">BombBomb</a> as an Engineer.',
+        bio: `Drummer, video game player, father, husband, and general programming enthusiast. CS major in his senior year, and expected to graduate in Fall 2019. Daniel works fulltime at BombBomb as an Engineer.`,
     },
     {
         name: 'Brandon Feldhaus',
@@ -28,7 +28,7 @@ const teamMemberDataRow2 = [
         bio: 'James is a Software Reasearch Analyst for Bluebeam Inc in Pasadena CA. As a professional, James has been in the Tech industry for almost 7 years, most of the time spent researching and validating bugs.  Because of his job, he has been exposed to JAVA, SQL, PostgreSQL, Salesforce, C#, Visual Studio, git, COM, .NET, Groovy, php, and others. He is an avid Magic player, and table-top gamer (D&D, or similar RPG). He grew up in the Pacific Northwest, in the Portland, OR and SW Washington. If not playing Magic or video games, he will probably be out on his Motorcycle or putting on +40 weight eating Ice Cream.',
     },
     {
-        name: '<name>',
+        name: 'Bryan Perez',
         picture: 'https://www.cs.odu.edu/~410yello/images/placeholder.jpg',
         title: '<title>',
         bio: '<bio>',
