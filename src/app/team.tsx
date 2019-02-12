@@ -22,10 +22,10 @@ const teamMemberDataRow1 = [
 ];
 const teamMemberDataRow2 = [
     {
-        name: '<name>',
-        picture: '/~410yello/images/placeholder.jpg',
+        name: 'James Zeigler',
+        picture: '/~410yello/images/jzeigler_bio_img.jpg',
         title: '<title>',
-        bio: '<bio>',
+        bio: 'James is a Software Reasearch Analyst for Bluebeam Inc in Pasadena CA. As a professional, James has been in the Tech industry for almost 7 years, most of the time spent researching and validating bugs.  Because of his job, he has been exposed to JAVA, SQL, PostgreSQL, Salesforce, C#, Visual Studio, git, COM, .NET, Groovy, php, and others. He is an avid Magic player, and table-top gamer (D&D, or similar RPG). He grew up in the Pacific Northwest, in the Portland, OR and SW Washington. If not playing Magic or video games, he will probably be out on his Motorcycle or putting on +40 weight eating Ice Cream.',
     },
     {
         name: '<name>',
