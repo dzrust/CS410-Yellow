@@ -12,6 +12,6 @@ before_install:
 deploy:
   provider: script
   skip_cleanup: true
-  script: rsync -Pavqr -e "ssh -i ./id_rsa" $TRAVIS_BUILD_DIR/ 410yello@linux.cs.odu.edu:~/secure_html/temp/
+  script: rsync -Pavqrd -e "ssh -i ./id_rsa" $TRAVIS_BUILD_DIR/ 410yello@linux.cs.odu.edu:~/secure_html/
   on:
     branch: master
