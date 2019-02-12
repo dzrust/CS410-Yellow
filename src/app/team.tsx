@@ -29,7 +29,7 @@ const teamMemberDataRow2 = [
     },
     {
         name: 'Bryan Perez',
-        picture: 'https://www.cs.odu.edu/~410yello/images/placeholder.jpg',
+        picture: 'https://www.cs.odu.edu/~410yello/images/BryanP_img.jpg',
         title: '<title>',
         bio: '<bio>',
     },
