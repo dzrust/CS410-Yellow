@@ -8,7 +8,7 @@ import Presentation from './presentation';
 import References from './references';
 
 const HeadingRouter = () => (
-    <Router basename="/#/">
+    <Router basename="/~410yello/#/">
         <div>
             <header id="header">
                 <div className="inner">
