@@ -4,7 +4,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const path = require('path');
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: path.resolve(__dirname, 'src/app/index.tsx'),
     module: {
         rules: [

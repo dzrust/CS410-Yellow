@@ -61,3 +61,5 @@ typings/
 .next
 
 id_rsa
+
+dist/

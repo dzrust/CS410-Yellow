@@ -9,9 +9,11 @@ before_install:
   - eval "$(ssh-agent -s)"
   - chmod 600 ./id_rsa
   - ssh-add ./id_rsa
+before_deploy:
+  - npm run-script build
 deploy:
   provider: script
   skip_cleanup: true
-  script: rsync --exclude "id_rsa" --exclude "id_rsa.enc" --exclude "README.md" --exclude="node_modules" --exclude "package*.json" -Pavqrd -e "ssh -i ./id_rsa" $TRAVIS_BUILD_DIR/ 410yello@linux.cs.odu.edu:~/secure_html/
+  script: rsync -Pavqrd -e "ssh -i ./id_rsa" $TRAVIS_BUILD_DIR/dist/ 410yello@linux.cs.odu.edu:~/secure_html/
   on:
     branch: master
