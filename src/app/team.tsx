@@ -3,31 +3,19 @@ import * as React from "react";
 const teamMemberDataRow1 = [
     {
         name: 'Daniel Zrust',
-        picture: 'images/DanielZrustPhoto.jpg',
+        picture: '/~410yello/images/DanielZrustPhoto.jpg',
         title: 'Engineer',
         bio: 'Drummer, video game player, father, husband, and general programming enthusiast',
     },
     {
         name: 'Brandon Feldhaus',
-        picture: 'images/BrandonFeldhausPhoto.jpg',
+        picture: '/~410yello/images/BrandonFeldhausPhoto.jpg',
         title: '<title>',
         bio: "Brandon Feldhaus is currently a junior at ODU and is majoring in Computer Science. He hopes to take his knowledge learned at ODU and one day create his own smart phone application. One of Brandon's biggest accomplishments in life is winning the ugly sweater contest at a 2018 christmas party, he won with the very sweater shown above.",
     },
     {
         name: 'John Edgar Monroe Quiambao',
-        picture: 'images/placeholder.jpg',
-        title: '<title>',
-        bio: '<bio>',
-    },
-    {
-        name: '<name>',
-        picture: 'images/placeholder.jpg',
-        title: '<title>',
-        bio: '<bio>',
-    },
-    {
-        name: '<name>',
-        picture: 'images/placeholder.jpg',
+        picture: '/~410yello/images/placeholder.jpg',
         title: '<title>',
         bio: '<bio>',
     }
@@ -35,13 +23,13 @@ const teamMemberDataRow1 = [
 const teamMemberDataRow2 = [
     {
         name: '<name>',
-        picture: 'images/placeholder.jpg',
+        picture: '/~410yello/images/placeholder.jpg',
         title: '<title>',
         bio: '<bio>',
     },
     {
         name: '<name>',
-        picture: 'images/placeholder.jpg',
+        picture: '/~410yello/images/placeholder.jpg',
         title: '<title>',
         bio: '<bio>',
     }

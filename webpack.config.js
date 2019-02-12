@@ -43,6 +43,10 @@ module.exports = {
                 {
                     from: path.resolve(__dirname, 'src/styles'),
                     to: path.resolve(__dirname, 'dist/styles'),
+                },
+                {
+                    from: path.resolve(__dirname, 'src/vendor'),
+                    to: path.resolve(__dirname, 'dist/vendor'),
                 }
             ],
             {}

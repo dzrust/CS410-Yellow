@@ -10,34 +10,20 @@ import References from './references';
 const HeadingRouter = () => (
     <Router>
         <div>
-            <nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
-                <Link className="navbar-brand" to="/"><strong>Old Dominion University</strong> Spring 19'</Link>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="navbarText">
-                    <ul className="navbar-nav mr-auto">
-                        <li className="nav-item active">
-                            <Link className="nav-link" to="/">Home</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/problem">Problem</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/solution">Soution</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/team">Team</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/presentations">Presentations</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/references">References</Link>
-                        </li>
-                    </ul>
+            <header id="header">
+                <div className="inner">
+                    <Link to="/" className="logo"><strong>Old Dominion University</strong> Spring 19'</Link>
+                    <nav id="nav">
+                        <Link to="/">Home</Link>
+                        <Link to="/problem">Problem</Link>
+                        <Link to="/solution">Soution</Link>
+                        <Link to="/team">Team</Link>
+                        <Link to="/presentations">Presentations</Link>
+                        <Link to="/references">References</Link>
+                    </nav>
+                    <a href="#navPanel" className="navPanelToggle"><span className="fa fa-bars"></span></a>
                 </div>
-            </nav>
+            </header>
             <div className="container marketing">
                 <Route exact path="/" component={Home} />
                 <Route path="/problem" component={Problem} />
