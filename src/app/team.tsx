@@ -32,6 +32,12 @@ const teamMemberDataRow2 = [
         picture: 'https://www.cs.odu.edu/~410yello/images/placeholder.jpg',
         title: '<title>',
         bio: '<bio>',
+    },
+    {
+        name: 'Kevin OBrien',
+        picture: 'https://www.cs.odu.edu/~410yello/images/placeholder.jpg',
+        title: '<title>',
+        bio: 'Computer Science Major senior year, Employed at VMASC working with AI, Enjoys fishing, video games, and relaxing.',
     }
 ];
 
