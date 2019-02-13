@@ -29,10 +29,6 @@ module.exports = {
         new CopyWebpackPlugin(
             [
                 {
-                    from: path.resolve(__dirname, 'src/fonts'),
-                    to: path.resolve(__dirname, 'dist/fonts'),
-                },
-                {
                     from: path.resolve(__dirname, 'src/images'),
                     to: path.resolve(__dirname, 'dist/images'),
                 },
@@ -43,10 +39,6 @@ module.exports = {
                 {
                     from: path.resolve(__dirname, 'src/styles'),
                     to: path.resolve(__dirname, 'dist/styles'),
-                },
-                {
-                    from: path.resolve(__dirname, 'src/vendor'),
-                    to: path.resolve(__dirname, 'dist/vendor'),
                 }
             ],
             {}
