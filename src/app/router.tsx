@@ -1,5 +1,5 @@
 import * as React from "react";
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Route, Link } from 'react-router-dom';
 import Home from './home';
 import Problem from './problem';
 import Solution from './solution';
@@ -9,7 +9,7 @@ import References from './references';
 import Footer from "./footer";
 
 const HeadingRouter = () => (
-    <Router basename="/~410yello/#/">
+    <Router basename="/">
         <div className="page">
             <div id="header" className="header">
                 <Link to="/" className="header-logo"><strong>Old Dominion University</strong> Spring 19'</Link>
