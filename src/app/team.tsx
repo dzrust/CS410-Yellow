@@ -42,6 +42,7 @@ const teamMemberDataRow2 = [
 ];
 
 const Team = () => (
+<body>    
     <div>
         <div className="row">
             {
@@ -80,6 +81,7 @@ const Team = () => (
             }
         </div>
     </div>
+</body>
 );
 
 export default Team;
