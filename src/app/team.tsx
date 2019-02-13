@@ -15,9 +15,9 @@ const teamMemberDataRow1 = [
     },
     {
         name: 'John Edgar Monroe Quiambao',
-        picture: 'https://www.cs.odu.edu/~410yello/images/placeholder.jpg',
-        title: '<title>',
-        bio: '<bio>',
+        picture: 'https://www.cs.odu.edu/~410yello/images/JohnQuiambao.jpg',
+        title: 'Software Engineer, Professional Compiler',
+        bio: 'Born in Yokosuka, Japan, John Quiambao is an ODU senior aiming for a Computer Scientist major and Computer Engineer minor. His hobbies include video games, board games, card games, computers, and making videos for others to enjoy. Proof of his passion and skills for gaming are seen above.',
     }
 ];
 const teamMemberDataRow2 = [
