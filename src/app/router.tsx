@@ -1,30 +1,27 @@
 import * as React from "react";
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Route, Link } from 'react-router-dom';
 import Home from './home';
 import Problem from './problem';
 import Solution from './solution';
 import Team from './team';
 import Presentation from './presentation';
 import References from './references';
+import Footer from "./footer";
 
 const HeadingRouter = () => (
-    <Router basename="/~410yello/#/">
-        <div>
-            <header id="header">
-                <div className="inner">
-                    <Link to="/" className="logo"><strong>Old Dominion University</strong> Spring 19'</Link>
-                    <nav id="nav">
-                        <Link to="/">Home</Link>
-                        <Link to="/problem">Problem</Link>
-                        <Link to="/solution">Soution</Link>
-                        <Link to="/team">Team</Link>
-                        <Link to="/presentations">Presentations</Link>
-                        <Link to="/references">References</Link>
-                    </nav>
-                    <a href="#navPanel" className="navPanelToggle"><span className="fa fa-bars"></span></a>
-                </div>
-            </header>
-            <div className="container marketing">
+    <Router basename="/">
+        <div className="page">
+            <div id="header" className="header">
+                <Link to="/" className="header-logo"><strong>Old Dominion University</strong> Spring 19'</Link>
+                <div id="filler" />
+                <Link to="/" className="header-link">Home</Link>
+                <Link to="/problem" className="header-link">Problem</Link>
+                <Link to="/solution" className="header-link">Soution</Link>
+                <Link to="/team" className="header-link">Team</Link>
+                <Link to="/presentations" className="header-link">Presentations</Link>
+                <Link to="/references" className="header-link">References</Link>
+            </div>
+            <div className="content">
                 <Route exact path="/" component={Home} />
                 <Route path="/problem" component={Problem} />
                 <Route path="/solution" component={Solution} />
@@ -32,6 +29,7 @@ const HeadingRouter = () => (
                 <Route path="/presentations" component={Presentation} />
                 <Route path="/references" component={References} />
             </div>
+            <Footer />
         </div>
     </Router>
 );
