@@ -31,12 +31,12 @@ const teamMemberDataRow2 = [
         name: 'Bryan Perez',
         picture: 'https://www.cs.odu.edu/~410yello/images/BryanP_img.jpg',
         title: '<title>',
-        bio: '<bio>',
+        bio: 'Bryan is a senior at Old Dominion University expected to graduate in fall 2019. Curently enrolled in the linked BS/MS CS program. Serverd in the United States Army as an infantryman. ',
     },
     {
         name: 'Kevin OBrien',
-        picture: 'https://www.cs.odu.edu/~410yello/images/placeholder.jpg',
-        title: '<title>',
+        picture: 'https://www.cs.odu.edu/~410yello/images/Kevin.jpg',
+        title: 'Member',
         bio: 'Computer Science Major senior year, Employed at VMASC working with AI, Enjoys fishing, video games, and relaxing.',
     }
 ];
