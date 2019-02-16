@@ -11,7 +11,7 @@ const teamMemberData = [
         name: 'Brandon Feldhaus',
         picture: 'https://www.cs.odu.edu/~410yello/images/BrandonFeldhausPhoto.jpg',
         title: 'Mobile Developer',
-        bio: "Brandon Feldhaus is currently a junior at ODU and is majoring in Computer Science. He hopes to take his knowledge learned at ODU and one day create his own smart phone application. One of Brandon's biggest accomplishments in life is winning the ugly sweater contest at a 2018 christmas party, he won with the very sweater shown above.",
+        bio: "Brandon Feldhaus is currently a junior at ODU and is majoring in Computer Science. He hopes to take his knowledge learned at ODU and one day create his own smart phone application.",
     },
     {
         name: 'John Edgar Monroe Quiambao',
