@@ -16,7 +16,7 @@ const HeadingRouter = () => (
                 <div id="filler" />
                 <Link to="/" className="header-link">Home</Link>
                 <Link to="/problem" className="header-link">Problem</Link>
-                <Link to="/solution" className="header-link">Soution</Link>
+                <Link to="/solution" className="header-link">Solution</Link>
                 <Link to="/team" className="header-link">Team</Link>
                 <Link to="/presentations" className="header-link">Presentations</Link>
                 <Link to="/references" className="header-link">References</Link>
