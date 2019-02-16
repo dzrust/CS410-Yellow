@@ -1,0 +1,16 @@
+.home-page {
+    background-image: url('https://www.cs.odu.edu/~410yello/images/coolBathroom.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    height: 100%;
+    display: grid;
+}
+
+.home-page h1 {
+    font-size: 2.5rem;
+    align-self: center;
+    margin: 0;
+}
