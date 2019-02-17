@@ -1,13 +1,48 @@
 import * as React from "react";
 
+const references = [
+    {
+        text: "Cleveland Clinic",
+        link: "https://my.clevelandclinic.org/health/articles/7040-gastrointestinal-disorders"
+    },
+    {
+        text: "Enviromaster Of Washington DC",
+        link: "http://www.enviromasterofwashingtondc.com/blog/dirty-public-restroom-floors-can-infect-entire-building/",
+    },
+    {
+        text: "Healthline",
+        link: "https://www.healthline.com/health/stress-constipation"
+    },
+    {
+        text: "PR News Wire",
+        link: "https://www.prnewswire.com/news-releases/americans-come-clean-on-messy-public-restrooms-in-new-survey-224213141.html",
+    },
+    {
+        text: "The Conversation",
+        link: "https://theconversation.com/why-do-public-bathrooms-make-us-so-anxious-and-why-arent-we-doing-anything-about-it-50107",
+    },
+    {
+        text: "Womens Health Mag",
+        link: "https://www.womenshealthmag.com/health/a19998266/pooping-at-work/",
+    },
+];
+
 const References = () => (
-    <div>
+    <div className="reference-page">
         <h1>
             References
-        </h1>	
-        {
-        text: "Bradley Corporation. "Americans Come Clean on Messy Public Restrooms in New Survey." PR Newswire: News distribution, targeting and monitoring. 18 Sept. 2013. 13 Feb. 2019 <https://www.prnewswire.com/news-releases/americans-come-clean-on-messy-public-restrooms-in-new-survey-224213141.html>",
-        }
+        </h1>
+        <div>
+            {
+                references.map((reference) => (
+                    <div>
+                        <a href={reference.link}>
+                            {reference.text}
+                        </a>
+                    </div>
+                ))
+            }
+        </div>
     </div>
 );
 
