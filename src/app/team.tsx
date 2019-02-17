@@ -18,19 +18,8 @@ const teamMemberData = [
         picture: 'https://www.cs.odu.edu/~410yello/images/JohnQuiambao.jpg',
         title: 'Software Engineer, Professional Compiler',
         bio: 'Born in Yokosuka, Japan, John Quiambao is an ODU senior aiming for a Computer Scientist major and Computer Engineer minor. His hobbies include video games, board games, card games, computers, and making videos for others to enjoy. Proof of his passion and skills for gaming are seen above.',
-<<<<<<< HEAD
-    }
 ];
-const teamMemberDataRow2 = [
-=======
-    },
->>>>>>> master
-    {
-        name: 'James Zeigler',
-        picture: 'https://www.cs.odu.edu/~410yello/images/jzeigler_bio_img.jpg',
-        title: 'Software Reasearch Analyst',
         bio: 'James is a Software Reasearch Analyst for Bluebeam Inc in Pasadena CA. As a professional, James has been in the Tech industry for almost 7 years, most of the time spent researching and validating bugs.  Because of his job, he has been exposed to JAVA, SQL, PostgreSQL, Salesforce, C#, Visual Studio, git, COM, .NET, Groovy, php, and others. He is an avid Magic player, and table-top gamer (D&D, or similar RPG). He grew up in the Pacific Northwest, in the Portland, OR and SW Washington. If not playing Magic or video games, he will probably be out on his Motorcycle or putting on +40 weight eating Ice Cream.',
-    },
     {
         name: 'Bryan Perez',
         picture: 'https://www.cs.odu.edu/~410yello/images/BryanP_img.jpg',
