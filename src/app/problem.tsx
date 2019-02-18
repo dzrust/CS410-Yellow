@@ -19,17 +19,20 @@ const Problem = () => (
             thus deterring users away from the restroom.
             When users do not use the restroom it incurs gastric intestinal discomfort or constipation.
         </p>
-        <p>
+        <h2>
+            Characteristics of the problem:
+        </h2>
+        <ul>
             {
-                characteristicsOfTheProblem.map(problem => {
-                    <div>
+                characteristicsOfTheProblem.map(problem => (
+                    <li>
                         {
                             problem
                         }
-                    </div>
-                })
+                    </li>
+                ))
             }
-        </p>	
+        </ul>
     </div>
 );
 

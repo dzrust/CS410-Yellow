@@ -15,15 +15,15 @@ const References = () => (
         <h1>
             References
         </h1>
-        <div>
+        <ul>
             {
                 references.map((reference) => (
-                    <div>
+                    <li>
                         {reference}
-                    </div>
+                    </li>
                 ))
             }
-        </div>
+        </ul>
     </div>
 );
 
