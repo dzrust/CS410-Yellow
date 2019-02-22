@@ -1,39 +1,95 @@
 import * as React from "react";
+import CompetitionMatrix from "./competitionMatrix";
 
-const characteristicsOfTheProblem = [
-    "Many unsanitary and unsafe restroom conditions",
-    "Gender neutral restrooms are uncommon",
-    "Lack of amenities such as: Soap, ample hand dryers, and no hand towels",
-    "Quality of amenities",
-];
+interface ProblemState {
+    displayedHeader: string;
+}
 
-const Problem = () => (
-    <div className="problem-page">
-        <h1>
-            Problem Statement
-        </h1>
-		<p>
-            Everyday we are faced with the urge to use the restroom,
-            however not all restrooms meet our needs or expectations.
-            Knowledge of location, amenities, sanitation, or safety are not always apparent when looking to use the restroom,
-            thus deterring users away from the restroom.
-            When users do not use the restroom it incurs gastric intestinal discomfort or constipation.
-        </p>
-        <h2>
-            Characteristics of the problem:
-        </h2>
-        <ul>
-            {
-                characteristicsOfTheProblem.map(problem => (
-                    <li>
-                        {
-                            problem
-                        }
-                    </li>
-                ))
-            }
-        </ul>
-    </div>
-);
+export default class Problem extends React.Component<{}, ProblemState> {
+    characteristicsOfTheProblem: Array<string>;
+    headers: Array<string>;
+    headerChangeInterval: number
+    constructor(props: any) {
+        super(props);
+        this.characteristicsOfTheProblem = [
+            "Many unsanitary and unsafe restroom conditions",
+            "Lack of gender neutral restrooms",
+            "Lack of amenities such as: Soap, ample hand dryers, and no hand towels",
+            "Quality of amenities",
+        ];
+        this.headers = [
+            'Hate finding a good restroom?',
+            'Hate losing your way back after using the restroom?',
+            'Hate feeling like you can\'t tell people about bad bathrooms?',
+        ];
 
-export default Problem;
+        this.state = {
+            displayedHeader: this.headers[0]
+        }
+        
+    }
+
+    componentDidMount() {
+        this.headerChangeInterval = setInterval(this.setDisplayedHeader, 4000);
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.headerChangeInterval);
+    }
+
+    setDisplayedHeader = () => {
+        let currentIndex = this.headers.indexOf(this.state.displayedHeader);
+        let newHeader = '';
+        if ((currentIndex+1) === this.headers.length) {
+            newHeader = this.headers[0];
+        } else {
+            newHeader = this.headers[currentIndex+1];
+        }
+        this.setState({displayedHeader: newHeader});
+    }
+
+    render() {
+        return (
+            <div className="problem-page">
+                <div className="problem-page-header-container">
+                    {
+                        this.headers.map((header: string) => (
+                            <div className={header === this.state.displayedHeader ? 'problem-page-header' : 'problem-page-header hidden'}>
+                                {header}
+                            </div>
+                        ))
+                    }
+                </div>
+                <h2>
+                    So do We...
+                </h2>
+                <p>
+                    Everyday we are faced with the urge to use the restroom,
+                    however not all restrooms meet our needs or expectations.
+                    Knowledge of location, amenities, sanitation, or safety are not always apparent when looking to use the restroom,
+                    thus deterring users away from the restroom.
+                    When users do not use the restroom it incurs gastric intestinal discomfort or constipation.
+                </p>
+                <h2>
+                    Problems we are faced with:
+                </h2>
+                <ul className="problem-page-characteristics">
+                    {
+                        this.characteristicsOfTheProblem.map(problem => (
+                            <li>
+                                {
+                                    problem
+                                }
+                            </li>
+                        ))
+                    }
+                </ul>
+                <h2>
+                    Checkout how we crush the competition
+                </h2>
+                <CompetitionMatrix />
+            </div>
+        );
+    }
+}
+
