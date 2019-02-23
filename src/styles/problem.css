@@ -3,20 +3,38 @@
 }
 
 .problem-page-header-container {
-    height: 3rem;
-    margin-bottom: 2.5rem;
+    height: 4rem;
+    overflow-y: hidden;
 }
 
 .problem-page-header {
     opacity: 1;
     transition: all ease-in-out 1000ms;
     margin: 0;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.problem-page-sub-header {
+    margin: 0;
     font-size: 2rem;
     font-weight: 700;
+    margin: 2rem 0;
 }
 
 .hidden {
     opacity: 0;
+}
+
+.problem-page-section {
+    display: grid;
+    height: calc(100vh - 9rem);
+    align-content: center;
+    border-bottom: 1px solid #eee;
+}
+
+.problem-page-section.no-border {
+    border-bottom: none;
 }
 
 .problem-page-header.hidden {
@@ -25,18 +43,25 @@
 
 .problem-page-characteristics {
     text-align: left;
+    font-size: 1.5rem;
+}
+
+.problem-page-statement {
+    margin: auto;
+    width: 50rem;
 }
 
 .competition-matrix {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(10, auto);
+    width: 100%;
     justify-content: center;
 }
 
 .competition-matrix-header {
     display: grid;
-    grid-template-columns: repeat(7, 12rem);
+    grid-template-columns: repeat(7, 1fr);
     grid-template-rows: 2rem;
     background-color: #444;
     color: #fff;
@@ -48,7 +73,7 @@
 
 .competition-matrix-row {
     display: grid;
-    grid-template-columns: repeat(7, 12rem);
+    grid-template-columns: repeat(7, 1fr);
     grid-template-rows: 3rem;
     background-color: #eee;
     color: #676;
