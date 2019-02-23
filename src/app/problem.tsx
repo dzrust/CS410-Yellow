@@ -51,6 +51,7 @@ export default class Problem extends React.Component<{}, ProblemState> {
     render() {
         return (
             <div className="problem-page">
+<<<<<<< Updated upstream
                 <div className="problem-page-header-container">
                     {
                         this.headers.map((header: string) => (
@@ -88,6 +89,57 @@ export default class Problem extends React.Component<{}, ProblemState> {
                     Checkout how we crush the competition
                 </h2>
                 <CompetitionMatrix />
+=======
+                <div className="problem-page-section">
+                    <div className="problem-page-header-container">
+                        {
+                            this.headers.map((header: string) => (
+                                <div className={header === this.state.displayedHeader ? 'problem-page-header' : 'problem-page-header hidden'}>
+                                    {header}
+                                </div>
+                            ))
+                        }
+                    </div>
+                    <div className="problem-page-sub-header">
+                        So do We...
+                    </div>
+                    <p className="problem-page-statement">
+                        Everyday we are faced with the urge to use the restroom,
+                        however not all restrooms meet our needs or expectations.
+                        Knowledge of location, amenities, sanitation, or safety are not always apparent when looking to use the restroom,
+                        thus deterring users away from the restroom.
+                        When users do not use the restroom it incurs gastric intestinal discomfort or constipation.
+                    </p>
+                </div>
+                <div className="problem-page-section">
+                    <div className="problem-page-sub-header">
+                        Problems we are faced with:
+                    </div>
+                    <ul className="problem-page-characteristics">
+                        {
+                            this.characteristicsOfTheProblem.map(problem => (
+                                <li>
+                                    {
+                                        problem
+                                    }
+                                </li>
+                            ))
+                        }
+                    </ul>
+                </div>
+                <div className="problem-page-section">
+                    <div className="problem-page-sub-header">
+                        Checkout how we crush the competition
+                    </div>
+                    <CompetitionMatrix />
+                </div>
+                <div className="problem-page-section no-border">
+                    <div className="problem-page-sub-header">
+                        Geek out with us and check out our flow
+                    </div>
+                    <img className="problem-page-flow-image" src="https://www.cs.odu.edu/~410yello/images/flow.jpg" />
+                </div>
+>>>>>>> Stashed changes
             </div>
         );
     }

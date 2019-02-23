@@ -57,3 +57,7 @@
 .competition-matrix-row > div {
     align-self: center;
 }
+
+.problem-page-flow-image {
+    margin: auto;
+}
