@@ -27,7 +27,7 @@ const teamMemberData = [
     },
     {
         name: 'Bryan Perez',
-        picture: 'https://www.cs.odu.edu/~410yello/images/BryanP_img.jpg',
+        picture: 'https://www.cs.odu.edu/~410yello/images/Bryan_Perez.jpg',
         title: 'Software Developer',
         bio: 'Bryan is a senior at Old Dominion University expected to graduate in fall 2019. Curently enrolled in the linked BS/MS CS program. Serverd in the United States Army as an infantryman. ',
     },
