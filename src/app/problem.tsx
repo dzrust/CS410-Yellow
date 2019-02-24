@@ -56,7 +56,7 @@ export default class Problem extends React.Component<{}, ProblemState> {
                         {
                             this.headers.map((header: string) => (
                                 <div className={header === this.state.displayedHeader ? 'problem-page-header' : 'problem-page-header hidden'}>
-                                    {header}
+                                    { header }
                                 </div>
                             ))
                         }
@@ -80,19 +80,23 @@ export default class Problem extends React.Component<{}, ProblemState> {
                         {
                             this.characteristicsOfTheProblem.map(problem => (
                                 <li>
-                                    {
-                                        problem
-                                    }
+                                    { problem }
                                 </li>
                             ))
                         }
                     </ul>
                 </div>
-                <div className="problem-page-section no-border">
+                <div className="problem-page-section">
                     <div className="problem-page-sub-header">
                         Checkout how we crush the competition
                     </div>
                     <CompetitionMatrix />
+                </div>
+                <div className="problem-page-section no-border">
+                    <div className="problem-page-sub-header">
+                        Geek out with us and check out our flow
+                    </div>
+                    <img className="problem-page-flow-image" src="https://www.cs.odu.edu/~410yello/images/flow.jpg" /> 
                 </div>
             </div>
         );
