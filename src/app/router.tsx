@@ -13,7 +13,6 @@ const HeadingRouter = () => (
         <div className="page">
             <div id="header" className="header">
                 <Link to="/" className="header-logo"><strong>Old Dominion University</strong> Spring '19</Link>
-                <div id="filler" />
                 <Link to="/" className="header-link">Home</Link>
                 <Link to="/problem" className="header-link">Problem</Link>
                 <Link to="/solution" className="header-link">Solution</Link>

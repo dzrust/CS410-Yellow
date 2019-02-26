@@ -63,6 +63,8 @@ export default class Problem extends React.Component<{}, ProblemState> {
                     </div>
                     <div className="problem-page-sub-header">
                         So do We...
+                        <br />
+                        Finding safe bathrooms based on your feedback in real-time is how our app excels above the rest.
                     </div>
                     <p className="problem-page-statement">
                         Everyday we are faced with the urge to use the restroom,
