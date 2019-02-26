@@ -6,38 +6,34 @@ const matrixHeaders = [
     'Features', 'Skadoosh', 'SitorSquat', 'Toilet Finder', 'Flush', 'Where to Wee', 'Bathroom Scout'
 ];
 const matrix = [
-    ['iOS', true, true, true, true, false, true],
-    ['Android', true, true, true, true, true, true],
-    ['Rating', true, true, true, false, true, true],
-    ['Directions', true, true, false, true, true, true],
-    ['Filter', true, true, false, false, false, false],
-    ['Accessibility', true, true, true, true, false, true],
-    ['Safe', true, false, false, false, false, false],
-    ['Amenities', true, false, false, true, true, false],
-    ['Free', true, true, true, true, true, false]
+    ['iOS',             true, true, true, true, false, true],
+    ['Android',         true, true, true, true, true, true],
+    ['Rating',          true, true, true, false, true, true],
+    ['Directions',      true, true, false, true, true, true],
+    ['Filter',          true, true, false, false, false, false],
+    ['Accessibility',   true, true, true, true, false, true],
+    ['Safe',            true, false, false, false, false, false],
+    ['Amenities',       true, false, false, true, true, false],
+    ['Free',            true, true, true, true, true, false]
 ];
 
-const determineColumnDisplay = (column:any): any => {
-    
-}
-
 const CompetitionMatrix = () => (
-    <div className="competition-matrix">
-        <div className="competition-matrix-header">
+    <table className="competition-matrix">
+        <tr className="competition-matrix-header">
             {
                 matrixHeaders.map(header => (
-                    <div>
+                    <th>
                         {header}
-                    </div>
+                    </th>
                 ))
             }
-        </div>
+        </tr>
         {
             matrix.map(row => (
-                <div className="competition-matrix-row">
+                <tr className="competition-matrix-row">
                     {
                         row.map(column => (
-                            <div>
+                            <td>
                                 {
                                     typeof column !== 'boolean'
                                         ? (
@@ -53,13 +49,13 @@ const CompetitionMatrix = () => (
                                             )
                                         )
                                 }
-                            </div>
+                            </td>
                         ))
                     }
-                </div>
+                </tr>
             ))
         }
-    </div>
+    </table>
 );
 
 export default CompetitionMatrix;
