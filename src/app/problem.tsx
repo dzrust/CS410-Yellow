@@ -98,7 +98,7 @@ export default class Problem extends React.Component<{}, ProblemState> {
                     <div className="problem-page-sub-header">
                         Geek out with us and check out our flow
                     </div>
-                    <img className="problem-page-flow-image" src="https://www.cs.odu.edu/~410yello/images/flow.jpg" /> 
+                    <img className="problem-page-flow-image" src="images/problemIdeal.png" /> 
                 </div>
             </div>
         );

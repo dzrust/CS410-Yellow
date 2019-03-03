@@ -1,11 +1,16 @@
 import * as React from "react";
 
 const Charateristics = [
-        "A smart application that located restrooms within your area",
-        "Allow users to filter restrooms with wanted needs",
-        "Provide location of gender neutrality",
-        "Help users avoid dirty restrooms",
-        "Help with unusual long wait times (maybe in stadiums)",
+		"Allows users to create profiles",
+		"Profiles store store facility needs",
+        "Locates restrooms within your area that fulfill needs",
+		"Locations have attributes, profiles, and history",
+        "Respects gender neutrality",
+        "Identifies previously flagged dirty restrooms",
+        "Identifies long wait times (maybe in stadiums)",
+		"Allows owners to create accounts",
+		"Provides owners real-time feedback on facilities",
+		"Owners can generate analytics about locations"
     ];
 
 const Solution = () => (
