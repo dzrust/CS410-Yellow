@@ -99,6 +99,7 @@ export default class Problem extends React.Component<{}, ProblemState> {
                         Geek out with us and check out our flow
                     </div>
                     <img className="problem-page-flow-image" src="images/problemIdeal.png" /> 
+					<img className="problem-page-flow-image" src="images/problemReality.png" />
                 </div>
             </div>
         );
