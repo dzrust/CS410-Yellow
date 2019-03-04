@@ -1,0 +1,79 @@
+.problem-page {
+    text-align: center;
+}
+
+.problem-page-header-container {
+    height: 4rem;
+    overflow-y: hidden;
+}
+
+.problem-page-header {
+    opacity: 1;
+    transition: all ease-in-out 1000ms;
+    margin: 0;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.problem-page-sub-header {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 2rem 0;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.problem-page-section {
+    padding: 12rem 0;
+    align-content: center;
+    border-bottom: 1px solid #eee;
+}
+
+.problem-page-section.no-border {
+    border-bottom: none;
+}
+
+.problem-page-header.hidden {
+    height: 0px;
+}
+
+.problem-page-characteristics {
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.problem-page-statement {
+    margin: auto;
+    width: 50rem;
+}
+
+.competition-matrix {
+    display: table;
+    width: 100%;
+    justify-content: center;
+}
+
+.competition-matrix-header {
+    background-color: #444;
+    color: #fff;
+}
+
+.competition-matrix-header > div {
+    align-self: center;
+}
+
+.competition-matrix-row {
+    background-color: #eee;
+    color: #676;
+}
+
+.competition-matrix-row > div {
+    align-self: center;
+}
+
+.problem-page-flow-image {
+    margin: auto;
+}
