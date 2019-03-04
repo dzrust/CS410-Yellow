@@ -1,5 +1,6 @@
 import * as React from "react";
 import CompetitionMatrix from "./competitionMatrix";
+import RealTimeMatrix from "./realTimeMatrix";
 
 interface ProblemState {
     displayedHeader: string;
@@ -16,6 +17,8 @@ export default class Problem extends React.Component<{}, ProblemState> {
             "Lack of gender neutral restrooms",
             "Lack of amenities such as: Soap, ample hand dryers, and no hand towels",
             "Quality of amenities",
+            "Lack of real-time data",
+            "Long wait times"
         ];
         this.headers = [
             'Hate finding a good restroom?',
@@ -94,6 +97,13 @@ export default class Problem extends React.Component<{}, ProblemState> {
                     </div>
                     <CompetitionMatrix />
                 </div>
+                <div className="problem-page-section">
+                <div className="problem-page-sub-header">
+                        Real-Time
+                    </div>
+                    <RealTimeMatrix/>
+                </div>    
+                
                 <div className="problem-page-section no-border">
                     <div className="problem-page-sub-header">
                         Geek out with us and check out our flow
