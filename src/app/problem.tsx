@@ -65,16 +65,12 @@ export default class Problem extends React.Component<{}, ProblemState> {
                         }
                     </div>
                     <div className="problem-page-sub-header">
-                        So do We...
+                        So do we...
                         <br />
-                        Finding safe bathrooms based on your feedback in real-time is how our app excels above the rest.
+                        When it comes to identifying a quality restroom it can be difficult to get real-time data based upon feedback about the safety, cleanliness, and wait-time.
                     </div>
                     <p className="problem-page-statement">
-                        Everyday we are faced with the urge to use the restroom,
-                        however not all restrooms meet our needs or expectations.
-                        Knowledge of location, amenities, sanitation, or safety are not always apparent when looking to use the restroom,
-                        thus deterring users away from the restroom.
-                        When users do not use the restroom it incurs gastric intestinal discomfort or constipation.
+                        
                     </p>
                 </div>
                 <div className="problem-page-section">
@@ -108,7 +104,9 @@ export default class Problem extends React.Component<{}, ProblemState> {
                     <div className="problem-page-sub-header">
                         Geek out with us and check out our flow
                     </div>
-                    <img className="problem-page-flow-image" src="images/problemIdeal.png" /> 
+                    <h2> In an ideal world </h2>
+                    <img className="problem-page-flow-image" src="images/problemIdeal.png" />
+                    <h2> What actually happens</h2> 
 					<img className="problem-page-flow-image" src="images/problemReality.png" />
                 </div>
             </div>
