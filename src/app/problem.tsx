@@ -70,7 +70,9 @@ export default class Problem extends React.Component<{}, ProblemState> {
                         When it comes to identifying a quality restroom it can be difficult to get real-time data based upon feedback about the safety, cleanliness, and wait-time.
                     </div>
                     <p className="problem-page-statement">
-                        <br></br><br></br>
+                       
+
+
                     </p>
                     <div className="clearfix">
                     <div className="problem-page-heading">
