@@ -27,9 +27,9 @@
 }
 
 .problem-page-section {
-    padding: 12rem 0;
+    padding: 2rem 0;
     align-content: center;
-    border-bottom: 1px solid #eee;
+    border-bottom: 3px solid #eee;
 }
 
 .problem-page-section.no-border {
@@ -76,4 +76,17 @@
 
 .problem-page-flow-image {
     margin: auto;
+}
+.problem-page-heading{
+    text-align: left;
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 2rem 0;
+}
+.image{
+    float: right;
+}
+.clearfix{
+    overflow: auto;
 }

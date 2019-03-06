@@ -89,7 +89,9 @@ const renderTopRow = () => (
                 {teamMemberData.John.bio}
             </div>
         </div>
+        <br></br>
     </div>
+    
 );
 
 const renderBottomRow = () => (
@@ -142,6 +144,7 @@ const renderBottomRow = () => (
                 {teamMemberData.Kevin.bio}
             </div>
         </div>
+        <br></br><br></br><br></br>
     </div>
 );
 

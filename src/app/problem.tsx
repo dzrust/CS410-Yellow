@@ -13,11 +13,11 @@ export default class Problem extends React.Component<{}, ProblemState> {
     constructor(props: any) {
         super(props);
         this.characteristicsOfTheProblem = [
-            "Many unsanitary and unsafe restroom conditions",
-            "Lack of gender neutral restrooms",
-            "Lack of amenities such as: Soap, ample hand dryers, and no hand towels",
-            "Quality of amenities",
             "Lack of real-time data",
+            "Lack of gender neutral restrooms",
+            "Lack of amenities such as: Soap, ample hand dryers, etc",
+            "Quality of amenities",
+            "Many unsanitary and unsafe restroom conditions",
             "Long wait times"
         ];
         this.headers = [
@@ -70,35 +70,37 @@ export default class Problem extends React.Component<{}, ProblemState> {
                         When it comes to identifying a quality restroom it can be difficult to get real-time data based upon feedback about the safety, cleanliness, and wait-time.
                     </div>
                     <p className="problem-page-statement">
-                        
+                        <br></br><br></br>
                     </p>
-                </div>
-                <div className="problem-page-section">
-                    <div className="problem-page-sub-header">
-                        Problems we are faced with:
-                    </div>
+                    <div className="clearfix">
+                    <div className="problem-page-heading">
+                    Problems we are faced with:
+                    <img className= "image" src="images/problemCharacteristicsImage.jpg" width="300" height="300"/>
+                    </div>   
                     <ul className="problem-page-characteristics">
                         {
                             this.characteristicsOfTheProblem.map(problem => (
                                 <li>
-                                    { problem }
+                                    {problem}
+                                    
                                 </li>
                             ))
                         }
-                    </ul>
+                    </ul> 
+                                  
+                </div>
                 </div>
                 <div className="problem-page-section">
                     <div className="problem-page-sub-header">
                         Checkout how we crush the competition
                     </div>
                     <CompetitionMatrix />
-                </div>
-                <div className="problem-page-section">
-                <div className="problem-page-sub-header">
-                        Real-Time
-                    </div>
+                    <div className="problem-page-sub-header">
+                    Real-Time
+                    </div> 
                     <RealTimeMatrix/>
-                </div>    
+                </div>
+                  
                 
                 <div className="problem-page-section no-border">
                     <div className="problem-page-sub-header">
