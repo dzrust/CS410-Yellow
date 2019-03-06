@@ -1,0 +1,21 @@
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 2rem 0;
+}
+
+.MFCD-header, .mockup-header {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 2rem 0;
+}
+
+.MFCD-image {
+    height: 20rem;
+    width: 20rem;
+}
+
+.mockup-image {
+    height: 20rem;
+    width: 10rem;
+}

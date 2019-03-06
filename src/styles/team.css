@@ -1,20 +1,19 @@
 .team-page {
     color: #ccc;
-    height: 100%;
-    display: grid;
-    grid-template-rows: repeat(2, auto);
-    grid-template-columns: repeat(3, auto);
-    grid-column-gap: 1rem;
-    grid-row-gap: 1rem;
     text-align: center;
 }
 
 .team-member {
-    display: grid;
-    grid-template-rows: 8.75rem 2.8rem 1.1rem auto;
-    grid-template-columns: auto;
-    grid-row-gap: 0.75rem;
+    display: inline-block;
+    width: 20rem;
     text-align: center;
+    margin: 1rem;
+}
+
+@media screen and (max-width: 700px) {
+    .team-member {
+        width: 100%;
+    }
 }
 
 .team-member-image {
@@ -43,18 +42,4 @@
     font-size: 0.8rem;
     font-weight: 400;
     color: #444;
-}
-
-@media screen and (max-width: 781.38px) {
-    .team-member-name {
-        font-size: 1rem;
-    }
-    
-    .team-member-title {
-        font-size: .8rem;
-    }
-    
-    .team-member-bio {
-        font-size: 0.5rem;
-    }
 }
