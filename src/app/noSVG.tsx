@@ -7,8 +7,8 @@ const NoSVG = ({}) => (
         xlinkHref="http://www.w3.org/1999/xlink"
         preserveAspectRatio="xMidYMid meet"
         viewBox="0 0 640 640"
-        width="32"
-        height="32"
+        width="2rem"
+        height="2rem"
     >
         <defs>
             <path d="M434.87 320L640 525.13L525.13 640L320 434.87L114.87 640L0 525.13L205.13 320L0 114.87L114.87 0L320 205.13L525.13 0L640 114.87L434.87 320Z" id="baeRVkhoGp" />

@@ -21,7 +21,7 @@ export default class Problem extends React.Component<{}, ProblemState> {
             "Long wait times"
         ];
         this.headers = [
-            'Hate finding a good restroom?',
+            'Hate finding a restroom?',
             'Hate losing your way?',
             'Love informing others?',
         ];
