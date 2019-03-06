@@ -10,6 +10,12 @@
     margin: 1rem;
 }
 
+@media screen and (max-width: 700px) {
+    .team-member {
+        width: 100%;
+    }
+}
+
 .team-member-image {
     height: 8.75rem;
     width: 8.75rem;

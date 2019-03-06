@@ -94,7 +94,7 @@ export default class Problem extends React.Component<{}, ProblemState> {
                     <CompetitionMatrix />
                 </div>
                 <div className="problem-page-section">
-                <div className="problem-page-sub-header">
+                    <div className="problem-page-sub-header">
                         Real-Time
                     </div>
                     <RealTimeMatrix/>

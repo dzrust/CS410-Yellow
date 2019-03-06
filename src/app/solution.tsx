@@ -39,6 +39,12 @@ const Solution = () => (
             }
         </ul>
         <MFCD />
+        <div>
+            <div className="mockup-header">
+                Screens from our app
+            </div>
+            <img className="mockup-image" src="images/mockup.png" />
+        </div>
     </div>
 );
 
