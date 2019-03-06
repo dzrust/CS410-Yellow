@@ -3,8 +3,9 @@
 }
 
 .problem-page-header-container {
-    height: 4rem;
+    height: 4.2rem;
     overflow-y: hidden;
+    overflow-x: visible;
 }
 
 .problem-page-header {
@@ -76,4 +77,6 @@
 
 .problem-page-flow-image {
     margin: auto;
+    height: 20rem;
+    width: 40rem;
 }

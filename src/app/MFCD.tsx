@@ -23,7 +23,7 @@ const MFCD = ({}) => (
                     GIS and the places API will be served by Google’s API’s
                 </li>
                 <li>
-                The DB will be a Postgres DB storing user information, restroom information, reviews, and location information to be provided through the API server.
+                    The DB will be a Postgres DB storing user information, restroom information, reviews, and location information to be provided through the API server.
                 </li>
             </ul>
         </div>
