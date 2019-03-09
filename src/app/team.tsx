@@ -17,7 +17,7 @@ const teamMemberData = {
         name: 'John Edgar Monroe Quiambao',
         picture: 'images/JohnQuiambao.jpg',
         title: 'Software Engineer, Professional Compiler',
-        bio: 'Born in Yokosuka, Japan, John Quiambao is an ODU senior aiming for a Computer Scientist major and Computer Engineer minor. His hobbies include video games, board games, card games, computers, and making videos for others to enjoy. Proof of his passion and skills for gaming are seen above.',
+        bio: 'Born in Yokosuka, Japan, John Quiambao is an ODU senior aiming for a Computer Scientist major and Computer Engineer minor. His hobbies include a variety of games and competition, computers, and making videos for others to enjoy. Although he was more secluded and introverted at a younger age, he has grown to be more open to what the world offers and wants to offer more back being a Computer Programmer in the future.',
     },
     "James": {
         name: 'James Zeigler',
