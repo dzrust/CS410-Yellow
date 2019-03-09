@@ -16,6 +16,10 @@
     }
 }
 
+.team-member-table {
+    width: 100%;
+}
+
 .team-member-image {
     height: 8.75rem;
     width: 8.75rem;
@@ -42,4 +46,8 @@
     font-size: 0.8rem;
     font-weight: 400;
     color: #444;
+    width: 25rem;
+    padding: 0 5rem;
+    padding-bottom: 2rem;
+    vertical-align: top;
 }
