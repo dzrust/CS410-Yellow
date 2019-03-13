@@ -1,13 +1,13 @@
 h2 {
     font-size: 2rem;
     font-weight: 700;
-    margin: 2rem 0;
+    
 }
 
 .MFCD-header, .mockup-header {
     font-size: 2rem;
     font-weight: 700;
-    margin: 2rem 0;
+    
 }
 
 .MFCD-image {
@@ -18,4 +18,8 @@ h2 {
 .mockup-image {
     height: 20rem;
     width: 10rem;
+}
+.Solution-page{
+    background: lightyellow; 
+    fill: lightyellow;
 }

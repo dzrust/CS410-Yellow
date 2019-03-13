@@ -13,11 +13,11 @@ export default class Problem extends React.Component<{}, ProblemState> {
     constructor(props: any) {
         super(props);
         this.characteristicsOfTheProblem = [
-            "Many unsanitary and unsafe restroom conditions",
-            "Lack of gender neutral restrooms",
-            "Lack of amenities such as: Soap, ample hand dryers, and no hand towels",
-            "Quality of amenities",
             "Lack of real-time data",
+            "Lack of gender neutral restrooms",
+            "Lack of amenities such as: Soap, ample hand dryers, etc",
+            "Many unsanitary and unsafe restroom conditions",          
+            "Quality of amenities",
             "Long wait times"
         ];
         this.headers = [
@@ -64,18 +64,17 @@ export default class Problem extends React.Component<{}, ProblemState> {
                             ))
                         }
                     </div>
-                    <div className="problem-page-sub-header">
-                        So do we...
-                        <br />
-                        When it comes to identifying a quality restroom it can be difficult to get real-time data based upon feedback about the safety, cleanliness, and wait-time.
-                    </div>
-                    <p className="problem-page-statement">
-                        
-                    </p>
-                </div>
-                <div className="problem-page-section">
-                    <div className="problem-page-sub-header">
+                    <div>
+                        <h3>So do we...</h3>
+
+                        <h2>When it comes to identifying a quality restroom it can be difficult 
+                            to get real-time data based upon feedback about the safety, 
+                            cleanliness, and wait-time.
+                        </h2>
+
+                        <div className="problem-page-sub-header-2">
                         Problems we are faced with:
+                        <img className="problem-image"  src="images/Problems.jpg" />
                     </div>
                     <ul className="problem-page-characteristics">
                         {
@@ -86,7 +85,9 @@ export default class Problem extends React.Component<{}, ProblemState> {
                             ))
                         }
                     </ul>
+                    </div>
                 </div>
+
                 <div className="problem-page-section">
                     <div className="problem-page-sub-header">
                         Checkout how we crush the competition
