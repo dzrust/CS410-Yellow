@@ -16,18 +16,16 @@ const Charateristics = [
 
 const Solution = () => (
     <div>
-        <h1>
-            Solution Statement
-        </h1>
-        <p>
+        
+        <div className="Solution-statement">
             Skadoosh will allow users the ability to locate,
             provide feedback, and to safely use public restrooms
             within your surrounding area.
-        </p>
-        <h2>
+            <div className="h2">
             Solution Charateristics:
-        </h2>
-        <ul>
+            <img className="solution-image"  src="images/solutions.jpg" />
+            </div>
+            <ul className="Solution-page-characteristics">
             {
                 Charateristics.map(Solution => (
                     <li>
@@ -37,7 +35,8 @@ const Solution = () => (
                     </li>
                 ))
             }
-        </ul>
+            </ul>
+        </div>
         <MFCD />
         <div>
             <div className="mockup-header">

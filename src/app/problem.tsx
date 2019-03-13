@@ -1,6 +1,7 @@
 import * as React from "react";
 import CompetitionMatrix from "./competitionMatrix";
 import RealTimeMatrix from "./realTimeMatrix";
+import OwnerMatrix from "./OwnerMatrix";
 
 interface ProblemState {
     displayedHeader: string;
@@ -92,15 +93,17 @@ export default class Problem extends React.Component<{}, ProblemState> {
                     <div className="problem-page-sub-header">
                         Checkout how we crush the competition
                     </div>
-                    <CompetitionMatrix />
-                </div>
-                <div className="problem-page-section">
-                    <div className="problem-page-sub-header">
+                    <CompetitionMatrix/>
+                    <div className="problem-page-sub-header-3">
                         Real-Time
                     </div>
                     <RealTimeMatrix/>
-                </div>    
-                
+                    <div className="problem-page-sub-header-3">
+                        Owner
+                    </div>
+                    <OwnerMatrix/>
+                </div>
+                  
                 <div className="problem-page-section no-border">
                     <div className="problem-page-sub-header">
                         Geek out with us and check out our flow
