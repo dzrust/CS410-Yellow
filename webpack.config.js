@@ -26,6 +26,9 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: 'main.css'
         }),
+        new CopyWebpackPlugin([
+            {from: './outputDir/favicon.ico'},  /// <--path to favicon
+        ]),
         new CopyWebpackPlugin(
             [
                 {
