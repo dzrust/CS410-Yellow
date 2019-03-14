@@ -27,7 +27,7 @@ module.exports = {
             filename: 'main.css'
         }),
         new CopyWebpackPlugin([
-            {from: './outputDir/favicon.ico'},  /// <--path to favicon
+            {from: '/images/favicon.ico'},  /// <--path to favicon
         ]),
         new CopyWebpackPlugin(
             [
