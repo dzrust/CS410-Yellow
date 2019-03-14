@@ -80,6 +80,8 @@ body, #app {
     color: #bbb;
     align-self: center;
     margin: 0 1rem;
+    font-size: 1rem;
+    margin-left: 4rem;
 }
 
 .header-logo:hover {
