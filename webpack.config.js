@@ -26,23 +26,15 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: 'main.css'
         }),
-        new CopyWebpackPlugin([
-            {from: '/images/favicon.ico'},  /// <--path to favicon
-        ]),
         new CopyWebpackPlugin(
             [
                 {
-                    from: path.resolve(__dirname, 'src/images'),
-                    to: path.resolve(__dirname, 'dist/images'),
+                    from: path.resolve(__dirname, 'src/'),
+                    to: path.resolve(__dirname, 'dist/'),
+                    ignore: [
+                        path.resolve(__dirname, 'src/app')
+                    ]                    
                 },
-                {
-                    from: path.resolve(__dirname, 'src/index.html'),
-                    to: path.resolve(__dirname, 'dist/index.html'),
-                },
-                {
-                    from: path.resolve(__dirname, 'src/styles'),
-                    to: path.resolve(__dirname, 'dist/styles'),
-                }
             ],
             {}
         ),
