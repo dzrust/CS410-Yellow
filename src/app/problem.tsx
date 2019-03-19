@@ -1,6 +1,7 @@
 import * as React from "react";
 import CompetitionMatrix from "./competitionMatrix";
 import RealTimeMatrix from "./realTimeMatrix";
+import OwnerMatrix from "./OwnerMatrix";
 
 interface ProblemState {
     displayedHeader: string;
@@ -13,11 +14,11 @@ export default class Problem extends React.Component<{}, ProblemState> {
     constructor(props: any) {
         super(props);
         this.characteristicsOfTheProblem = [
-            "Many unsanitary and unsafe restroom conditions",
-            "Lack of gender neutral restrooms",
-            "Lack of amenities such as: Soap, ample hand dryers, and no hand towels",
-            "Quality of amenities",
             "Lack of real-time data",
+            "Lack of gender neutral restrooms",
+            "Lack of amenities such as: Soap, ample hand dryers, etc",
+            "Many unsanitary and unsafe restroom conditions",          
+            "Quality of amenities",
             "Long wait times"
         ];
         this.headers = [
@@ -64,18 +65,17 @@ export default class Problem extends React.Component<{}, ProblemState> {
                             ))
                         }
                     </div>
-                    <div className="problem-page-sub-header">
-                        So do we...
-                        <br />
-                        When it comes to identifying a quality restroom it can be difficult to get real-time data based upon feedback about the safety, cleanliness, and wait-time.
-                    </div>
-                    <p className="problem-page-statement">
-                        
-                    </p>
-                </div>
-                <div className="problem-page-section">
-                    <div className="problem-page-sub-header">
+                    <div>
+                        <h3>So do we...</h3>
+
+                        <h2>When it comes to identifying a quality restroom it can be difficult 
+                            to get real-time data based upon feedback about the safety, 
+                            cleanliness, and wait-time.
+                        </h2>
+
+                        <div className="problem-page-sub-header-2">
                         Problems we are faced with:
+                        <img className="problem-image"  src="images/Problems.jpg" />
                     </div>
                     <ul className="problem-page-characteristics">
                         {
@@ -86,28 +86,32 @@ export default class Problem extends React.Component<{}, ProblemState> {
                             ))
                         }
                     </ul>
+                    </div>
                 </div>
+
                 <div className="problem-page-section">
                     <div className="problem-page-sub-header">
                         Checkout how we crush the competition
                     </div>
-                    <CompetitionMatrix />
-                </div>
-                <div className="problem-page-section">
-                    <div className="problem-page-sub-header">
+                    <CompetitionMatrix/>
+                    <div className="problem-page-sub-header-3">
                         Real-Time
                     </div>
                     <RealTimeMatrix/>
-                </div>    
-                
+                    <div className="problem-page-sub-header-3">
+                        Owner
+                    </div>
+                    <OwnerMatrix/>
+                </div>
+                  
                 <div className="problem-page-section no-border">
                     <div className="problem-page-sub-header">
                         Geek out with us and check out our flow
                     </div>
                     <h2> In an ideal world </h2>
-                    <img className="problem-page-flow-image" src="images/problemIdeal.png" />
+                    <img className="problem-page-flow-image" src="images/problemIdeal.jpg" />
                     <h2> What actually happens</h2> 
-					<img className="problem-page-flow-image" src="images/problemReality.png" />
+					<img className="problem-page-flow-image" src="images/problemReality.jpg" />
                 </div>
             </div>
         );
