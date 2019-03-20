@@ -32,7 +32,7 @@ const Solution = () => (
                 Solution Charateristics:
             <img className="solution-image" src="images/solutions.jpg" />
             </div>
-            <ul className="Solution-page-characteristics">
+            <ul className="solution-page-characteristics">
                 {
                     Charateristics.map(Solution => (
                         <li>
