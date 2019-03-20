@@ -18,9 +18,9 @@ const Solution = () => (
     <div>
         
         <div className="Solution-statement">
-            Skadoosh will allow users the ability to locate,
-            provide feedback, and to safely use public restrooms
-            within your surrounding area.
+        Skadoosh will provide users with the ability to locate 
+        and contribute real-time feedback that will notify owners
+         of their restroom conditions. 
             <div className="h2">
             Solution Charateristics:
             <img className="solution-image"  src="images/solutions.jpg" />
