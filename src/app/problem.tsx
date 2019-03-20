@@ -68,9 +68,9 @@ export default class Problem extends React.Component<{}, ProblemState> {
                     <div>
                         <h3>So do we...</h3>
 
-                        <h2>When it comes to identifying a quality restroom it can be difficult 
-                            to get real-time data based upon feedback about the safety, 
-                            cleanliness, and wait-time.
+                        <h2>Real-time feedback about cleanliness and amenities of 
+                            restrooms available for public use is difficult to find and 
+                            the ability for facility owners to use this feedback does not exist
                         </h2>
 
                         <div className="problem-page-sub-header-2">
