@@ -7,8 +7,8 @@ const YesSVG = ({ }) => (
         xlinkHref="http://www.w3.org/1999/xlink"
         preserveAspectRatio="xMidYMid meet"
         viewBox="0 0 640 640"
-        width="32"
-        height="32"
+        width="2rem"
+        height="2rem"
     >
         <defs>
             <path d="M301.6 486.64L301.57 486.67L420.22 640L640 355.97L515.67 288.26L391.83 513.65L93.07 0L0 96.86L301.6 486.64Z" id="acpWdQtnr" />

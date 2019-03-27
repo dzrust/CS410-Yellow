@@ -1,5 +1,7 @@
 import * as React from "react";
 import CompetitionMatrix from "./competitionMatrix";
+import RealTimeMatrix from "./realTimeMatrix";
+import OwnerMatrix from "./OwnerMatrix";
 
 interface ProblemState {
     displayedHeader: string;
@@ -12,13 +14,15 @@ export default class Problem extends React.Component<{}, ProblemState> {
     constructor(props: any) {
         super(props);
         this.characteristicsOfTheProblem = [
-            "Many unsanitary and unsafe restroom conditions",
+            "Lack of real-time data",
             "Lack of gender neutral restrooms",
-            "Lack of amenities such as: Soap, ample hand dryers, and no hand towels",
+            "Lack of amenities such as: Soap, ample hand dryers, etc",
+            "Many unsanitary and unsafe restroom conditions",          
             "Quality of amenities",
+            "Long wait times"
         ];
         this.headers = [
-            'Hate finding a good restroom?',
+            'Hate finding a restroom?',
             'Hate losing your way?',
             'Love informing others?',
         ];
@@ -61,22 +65,17 @@ export default class Problem extends React.Component<{}, ProblemState> {
                             ))
                         }
                     </div>
-                    <div className="problem-page-sub-header">
-                        So do We...
-                        <br />
-                        Finding safe bathrooms based on your feedback in real-time is how our app excels above the rest.
-                    </div>
-                    <p className="problem-page-statement">
-                        Everyday we are faced with the urge to use the restroom,
-                        however not all restrooms meet our needs or expectations.
-                        Knowledge of location, amenities, sanitation, or safety are not always apparent when looking to use the restroom,
-                        thus deterring users away from the restroom.
-                        When users do not use the restroom it incurs gastric intestinal discomfort or constipation.
-                    </p>
-                </div>
-                <div className="problem-page-section">
-                    <div className="problem-page-sub-header">
+                    <div>
+                        <h3>So do we...</h3>
+
+                        <h2>Real-time feedback about cleanliness and amenities of 
+                            restrooms available for public use is difficult to find and 
+                            the ability for facility owners to use this feedback does not exist
+                        </h2>
+
+                        <div className="problem-page-sub-header-2">
                         Problems we are faced with:
+                        <img className="problem-image"  src="images/Problems.jpg" />
                     </div>
                     <ul className="problem-page-characteristics">
                         {
@@ -87,19 +86,32 @@ export default class Problem extends React.Component<{}, ProblemState> {
                             ))
                         }
                     </ul>
+                    </div>
                 </div>
+
                 <div className="problem-page-section">
                     <div className="problem-page-sub-header">
                         Checkout how we crush the competition
                     </div>
-                    <CompetitionMatrix />
+                    <CompetitionMatrix/>
+                    <div className="problem-page-sub-header-3">
+                        Real-Time
+                    </div>
+                    <RealTimeMatrix/>
+                    <div className="problem-page-sub-header-3">
+                        Owner
+                    </div>
+                    <OwnerMatrix/>
                 </div>
+                  
                 <div className="problem-page-section no-border">
                     <div className="problem-page-sub-header">
                         Geek out with us and check out our flow
                     </div>
-                    <img className="problem-page-flow-image" src="images/problemIdeal.png" /> 
-					<img className="problem-page-flow-image" src="images/problemReality.png" />
+                    <h2> In an ideal world </h2>
+                    <img className="problem-page-flow-image" src="images/problemIdeal.jpg" />
+                    <h2> What actually happens</h2> 
+					<img className="problem-page-flow-image" src="images/problemReality.jpg" />
                 </div>
             </div>
         );

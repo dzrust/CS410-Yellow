@@ -3,8 +3,10 @@
 }
 
 .problem-page-header-container {
-    height: 4rem;
+    height: 4.5rem;
     overflow-y: hidden;
+    overflow-x: visible;
+    margin-top: -10rem;
 }
 
 .problem-page-header {
@@ -20,6 +22,7 @@
     font-size: 2rem;
     font-weight: 700;
     margin: 2rem 0;
+    margin-top: -5rem;
 }
 
 .hidden {
@@ -43,6 +46,8 @@
 .problem-page-characteristics {
     text-align: left;
     font-size: 1.5rem;
+    margin: 0;
+    margin-bottom: -2rem;
 }
 
 .problem-page-statement {
@@ -76,4 +81,27 @@
 
 .problem-page-flow-image {
     margin: auto;
+    height: 30rem;
+    width: 60rem;
+}
+.problem-page-sub-header-2 {
+    margin-top: 10rem;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: start;
+    margin-bottom: 2rem;
+
+}
+.problem-image{
+    height: 20rem;
+    width: 15rem;
+    float: right;
+}
+.problem-page-sub-header-3 {
+    margin-top: 10rem;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+
 }

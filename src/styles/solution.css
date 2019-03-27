@@ -1,16 +1,47 @@
-h2 {
+.h2 {
+    text-align: left;
     font-size: 2rem;
     font-weight: 700;
-    margin: 2rem 0;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
 }
 
-.MFCD-header {
+.MFCD-header, .mockup-header {
     font-size: 2rem;
     font-weight: 700;
-    margin: 2rem 0;
+    margin-bottom: 2.5rem;
+    
 }
 
 .MFCD-image {
     height: 20rem;
     width: 20rem;
+    margin-bottom: 3rem;
+}
+
+.mockup-image {
+    height: 40rem;
+}
+.Solution-page{
+    background: lightyellow; 
+    fill: lightyellow;
+}
+.Solution-statement{
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 5rem;
+}
+.solution-page-characteristics {
+    text-align: left;
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 100;
+    margin-bottom: 2rem;
+}
+.solution-image{
+    margin-top: 4rem;
+    height: 20rem;
+    width: 20rem;
+    float: right;
 }
