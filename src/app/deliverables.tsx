@@ -79,6 +79,12 @@ export default class Deliverables extends React.Component<{}, {}> {
                         }
                     </ul>
                 </div>
+                <div>
+                    <h2>
+                        WBS
+                    </h2>
+                    <img src="images/WBS.png" alt="WBS" className="problem-page-flow-image"/>
+                </div>
             </div>
         );
     }
