@@ -44,7 +44,6 @@ const Solution = () => (
                 }
             </ul>
         </div>
-        <MFCD />
         <div>
             <div className="mockup-header">
                 Screens from our app
