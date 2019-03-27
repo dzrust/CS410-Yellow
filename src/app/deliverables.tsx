@@ -59,7 +59,7 @@ export default class Deliverables extends React.Component<{}, {}> {
                 </div>
                 <div>
                     <h2>
-                        Owner User Stories
+                        Non-Owner User Stories
                     </h2>
                     <ul>
                         {
@@ -69,7 +69,7 @@ export default class Deliverables extends React.Component<{}, {}> {
                         }
                     </ul>
                     <h2>
-                        Non-Owner User Stories
+                        Owner User Stories
                     </h2>
                     <ul>
                         {
