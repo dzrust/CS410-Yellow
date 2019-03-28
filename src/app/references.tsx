@@ -61,7 +61,7 @@ const References = () => (
                         {
                            <a target="_blank" href={reference.Link}> {reference.Publisher} </a>     
                         }
-                       <div className="reference-space"></div>
+                       <div className="reference-space" />
                     </li>
                     
                 ))
