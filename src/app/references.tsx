@@ -31,6 +31,16 @@ const references = [
         Title: 'Stress Constipation: Causes and Treatments',
         Link: 'https://www.healthline.com/health/stress-constipation',
         Publisher: 'HealthLine',
+    },
+    {
+        Title: 'Study: Dirty Restrooms Lead to Lost Business',
+        Link: 'https://www.cleanlink.com/news/article.aspx?id=13366',
+        Publisher: 'CleanLink',
+    },
+    {
+        Title: '2018 ReviewTrackers Online Reviews Survey: Statistics and Trends',
+        Link: 'https://www.reviewtrackers.com/online-reviews-survey/',
+        Publisher: 'ReviewTrackers',
     }
     
 ];
@@ -49,8 +59,9 @@ const References = () => (
                         }
                         <br></br>
                         {
-                           <a target="_blank" href={reference.Link}> {reference.Publisher} </a> 
-                        }     
+                           <a target="_blank" href={reference.Link}> {reference.Publisher} </a>     
+                        }
+                       <div className="reference-space"></div>
                     </li>
                     
                 ))
