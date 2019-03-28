@@ -14,9 +14,13 @@
 }
 
 .MFCD-image {
-    height: 20rem;
+    height: 25rem;
     width: 20rem;
-    margin-bottom: 3rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
 }
 
 .mockup-image {
@@ -24,7 +28,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
+    width: auto;
 }
 .Solution-page{
     background: lightyellow; 
@@ -48,4 +52,45 @@
     height: 20rem;
     width: 20rem;
     float: right;
+}
+.user-stories-header{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: rgb(121, 8, 8)
+}
+.user-stories-sub-header{
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-left: 1em;
+    margin-top: .5em;
+    color: rgb(24, 121, 231);
+}
+.user-stories{
+    font-weight: 600;
+    font-size: 1rem;
+}
+.user-stories-main-header, .wbs-main-header{
+    font-weight: 800;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+.presentation-header{
+    font-size: 3rem;
+    font-weight: 700;
+    color: brown;
+}
+.presentation-download{
+    text-align: center;
+    margin-top: .5em;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.flow-header{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: rgb(121, 8, 8);
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
