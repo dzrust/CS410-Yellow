@@ -16,14 +16,14 @@ const Charateristics = [
 
 const MFCD = ({}) => (
     <div className="MFCD">
-        <div className="MFCD-header">
+        <div className="wbs-main-header">
             MFCD
         </div>
         <div>
             <img src="images/MFCD.png" alt="MFCD chart" className="MFCD-image" />
         </div>
         <div>
-            <ul className="solution-page-characteristics">
+            <ul className="user-stories">
             {
                 Charateristics.map(MFCD => (
                     <li>
