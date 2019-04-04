@@ -49,6 +49,17 @@ const NON_OWNER_STORIES_WISH = [
     'See what type of amenities a bathroom contains',
 ]
 
+const ADMIN_STORIES_NEED = [
+    'Verify a business owner account',
+    'Verify an unverified restroom',
+    'Delete unverifiable restrooms',
+]
+
+const ADMIN_STORIES_WISH = [
+    'Empty ATM',
+    'Fill Here',
+]
+
 export default class Deliverables extends React.Component<{}, {}> {
     constructor(props: any) {
         super(props);
@@ -124,6 +135,33 @@ export default class Deliverables extends React.Component<{}, {}> {
                         <ul>
                         {
                             OWNER_STORIES_WISH.map(stories => (
+                                <li>{stories}</li>
+                            ))
+                        }
+                        </ul>
+                    </div>
+                    <div className="user-stories-header">
+                        Administrator
+                    </div>
+                    <div className="user-stories-sub-header">
+                        As an Administrator I need to:
+                    </div>
+                    <div className="user-stories">
+                        <ul>
+                        {
+                            ADMIN_STORIES_NEED.map(stories => (
+                                <li>{stories}</li>
+                            ))
+                        }
+                        </ul>
+                    </div>
+                    <div className="user-stories-sub-header">
+                        As an Administrator I wish to:
+                    </div>
+                    <div className="user-stories">
+                        <ul>
+                        {
+                            ADMIN_STORIES_WISH.map(stories => (
                                 <li>{stories}</li>
                             ))
                         }
