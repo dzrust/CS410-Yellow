@@ -8,6 +8,7 @@ import Presentation from './presentation';
 import References from './references';
 import Footer from "./footer";
 import Deliverables from "./deliverables";
+import Glossary from "./glossary";
 
 const HeadingRouter = ({}) => {
     let headerWords = 'Old Dominion University';
@@ -16,6 +17,8 @@ const HeadingRouter = ({}) => {
         headerWords = 'ODU';
         subHeaderWords = '';
     }
+
+    
     return (
         <Router basename="/">
             <div className="page">
@@ -35,6 +38,8 @@ const HeadingRouter = ({}) => {
                     <Link to="/presentations" className="header-link">Presentations</Link>
                     <Link to="/references" className="header-link">References</Link>
                     <Link to="/deliverables" className="header-link">Deliverables</Link>
+                    <Link to="/glossary" className="header-link">Glossary</Link>
+                
                 </div>
                 <div className="content">
                     <Route exact path="/" component={Home} />
@@ -44,6 +49,7 @@ const HeadingRouter = ({}) => {
                     <Route path="/presentations" component={Presentation} />
                     <Route path="/references" component={References} />
                     <Route path="/deliverables" component={Deliverables} />
+                    <Route path="/glossary" component={Glossary} />
                 </div>
                 <Footer />
             </div>
