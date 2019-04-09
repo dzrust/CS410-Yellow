@@ -36,8 +36,8 @@ const HeadingRouter = ({}) => {
                     <Link to="/solution" className="header-link">Solution</Link>
                     <Link to="/team" className="header-link">Team</Link>
                     <Link to="/presentations" className="header-link">Presentations</Link>
-                    <Link to="/references" className="header-link">References</Link>
                     <Link to="/deliverables" className="header-link">Deliverables</Link>
+                    <Link to="/references" className="header-link">References</Link>
                     <Link to="/glossary" className="header-link">Glossary</Link>
                 
                 </div>
@@ -47,8 +47,8 @@ const HeadingRouter = ({}) => {
                     <Route path="/solution" component={Solution} />
                     <Route path="/team" component={Team} />
                     <Route path="/presentations" component={Presentation} />
-                    <Route path="/references" component={References} />
                     <Route path="/deliverables" component={Deliverables} />
+                    <Route path="/references" component={References} />
                     <Route path="/glossary" component={Glossary} />
                 </div>
                 <Footer />
