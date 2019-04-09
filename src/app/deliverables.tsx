@@ -171,7 +171,14 @@ export default class Deliverables extends React.Component<{}, {}> {
                     <div className="wbs-main-header">
                         WBS
                     </div>
-                    <img src="images/WBS.png" alt="WBS" className="mockup-image"/>
+                    <img src="images/WBS.png" alt="WBS" className="mockup-image-2"/>
+                </div>
+
+                <div>
+                    <div className="wbs-main-header">
+                    UI
+                    </div>
+                    <img src="images/UI.png" alt="WBS" className="mockup-image-3"/>
                 </div>
             </div>
         );
