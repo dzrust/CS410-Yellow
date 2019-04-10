@@ -1,63 +1,83 @@
 import * as React from "react";
 import MFCD from "./MFCD";
 
+const GUEST_NEEDS = [
+    'See a login/sign up page',
+    'Create a non-owner and owner profile/accountnces',
+    'View map of restrooms closest to my location',
+    'Choose a restroom and get directions',
+    'View ratings and reviews',
+    'See Skadoosh verified/approved bathrooms',
+    'Be prompted to register when I try to leave a review',
+    'Download the app from the respective stores',
+    'See a download link on our website',
+
+]
+
 const NON_OWNER_STORIES_NEEDS = [
-    'Find the closest restroom based on my preferences',
-    'Set my preferences',
-    'Leave a review',
+    'Login',
+    'Create/View my profile',
+    'Set my username/info',
     'Receive live notifications',
-    'View reviews for a bathroom',
-    'See a map of possible bathrooms',
-    'Create an account',
-    'Know when a restroom is open',
-    'Change my bathroom preferences on the map',
-    'Speedy ratings',
-    'Know how to get directions to a bathroom',
-    'Know if there’s a neutral-gender bathroom',
-    'Know if there is a changing table',
-    'Be able to ignore my preferences and find the closest bathroom possible',
+    'Create a list of preferences based on:',
+    '   -Cleanliness  ',
+    '   -Amenities',
+    '   -Gender nuetrality',
+    '   -Baby-changing stations',
+    'Edit my preferences',
+    'Find restroom based on my preferences',
+    'Leave a review',
+    'Have multiple preference profiles ',
+    'Have the option to ignore preferences and find closest restroom possible (urgent)',
+    
 ]
 
 const OWNER_STORIES_NEEDS = [
-    'Claim my business',
-    'Add a restroom',
-    'Manage feedback',
-    'Receive notifications', 
-    'Receive feedback',
-    'Create an account',
-    'Comment/respond to feedback from a customer',
-    'Display information about my bathroom (janitor schedule, time availability, and peak hours)',
-    'Add new amenities (such as changing station)',
+    'Get my business Skadoosh verified',
+    'Add my restroom to the map',
+    'Comment/respond to reviews/feedback',
+    'Display information about my bathroom:', 
+    '   -Hours of operation',
+    '   -Amenities',
+    'Update my restroom profile',
+    'Receive notification if my restroom gets a bad review or goes under a certain rating ',
+    
 ]
 
 const OWNER_STORIES_WISH = [
-    'Create a janitor schedule',
-    'Create a time availability',
-    'Know peak hours',
+    'Receive data analytics ',
+    'Filter data to assist with creating a janitor schedule',
+    'Filter data to view peak hours',
     'Advertise my business',
-    'Receive data analytics',
 ]
 
 const NON_OWNER_STORIES_WISH = [
-    'Set my gender',
-    'Add restrooms to my map',
-    'Sort restrooms based on ratings',
-    'Only see owner operated restrooms',
-    'See non-verified bathrooms',
+    'Add unverified restroom to the map ',
+    'View unverified restrooms created by other users (at their own risk)',
+    'Only view Skadoosh approved owner operated restrooms',
+    'View pictures of a restroom',
     'See pictures of restrooms',
-    'Add pictures of a bathroom',
+    'Add pictures of a restroom',
     'See what type of amenities a bathroom contains',
+    'Set my gender',
 ]
 
 const ADMIN_STORIES_NEED = [
-    'Verify a business owner account',
+    'Manage owner and non-owner accounts',
+    'Suspend or delete accounts',
+    'Verify a business for owner an account',
     'Verify an unverified restroom',
-    'Delete unverifiable restrooms',
+    'Prepare notifications to be sent to registered users',
+    'Send users notifications',
+    'Delete restroom locations',
+    'Delete false reviews',
+    'Delete owner feedback',
 ]
 
 const ADMIN_STORIES_WISH = [
-    'Empty ATM',
-    'Fill Here',
+    'Upgrade owner accounts',
+    'Manage advertisements for owner accounts',
+    'Manage top Skadoosh rated restroom list',
 ]
 
 export default class Deliverables extends React.Component<{}, {}> {
@@ -86,6 +106,23 @@ export default class Deliverables extends React.Component<{}, {}> {
                     <div className="user-stories-main-header">
                         User Stories
                     </div>
+
+                    <div className="user-stories-header">
+                        Guest
+                    </div>
+                    <div className="user-stories-sub-header">
+                        As an Guest I need to:
+                    </div>
+                    <div className="user-stories">
+                        <ul>
+                        {
+                            GUEST_NEEDS.map(stories => (
+                                <li>{stories}</li>
+                            ))
+                        }
+                        </ul>
+                    </div>
+                    
                     <div className="user-stories-header">
                         Non-Owner
                     </div>
@@ -178,8 +215,16 @@ export default class Deliverables extends React.Component<{}, {}> {
                     <div className="wbs-main-header">
                     UI
                     </div>
-                    <img src="images/UI.png" alt="WBS" className="mockup-image-3"/>
+                    <img src="images/UIWBS.png" alt="WBS" className="mockup-image-3"/>
                 </div>
+
+                <div>
+                    <div className="wbs-main-header">
+                    Algorithm
+                    </div>
+                    <img src="images/algo.png" alt="WBS" className="mockup-image-4"/>
+                </div>
+
             </div>
         );
     }
