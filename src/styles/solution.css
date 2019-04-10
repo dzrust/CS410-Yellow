@@ -103,9 +103,23 @@
     width: 60rem;
 }
 .mockup-image-3 {
+    height: 50rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65rem;
+}
+.mockup-image-4 {
     height: 40rem;
     display: block;
-    margin-left: 25rem;
+    margin-left: auto;
     margin-right: auto;
-    width: 50rem;
+    width: 55rem;
+}
+.mockup-image-5 {
+    height: 50rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75rem;
 }
