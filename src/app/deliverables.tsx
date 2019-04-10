@@ -222,8 +222,21 @@ export default class Deliverables extends React.Component<{}, {}> {
                     <div className="wbs-main-header">
                     Algorithm
                     </div>
-                    <img src="images/algo.png" alt="WBS" className="mockup-image-4"/>
+                    <img src="images/algorithm.png" alt="WBS" className="mockup-image-5"/>
                 </div>
+                <div>
+                    <div className="wbs-main-header">
+                    Testing
+                    </div>
+                    <img src="images/testing.png" alt="WBS" className="mockup-image-4"/>
+                </div>
+                <div>
+                    <div className="wbs-main-header">
+                    Database
+                    </div>
+                    <img src="images/database.png" alt="WBS" className="mockup-image-5"/>
+                </div>
+                
 
             </div>
         );
