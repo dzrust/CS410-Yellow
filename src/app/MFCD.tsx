@@ -1,7 +1,7 @@
 import * as React from "react";
 
 const Charateristics = [
-    "Local storage will hold information such as: gender, age, bathroom preferences, how long before a user will pee themselves",
+    "Local storage will hold information such as: gender and bathroom preferences (Highest Rated, Most Reviews, Best Overall, etc. etc.)",
     "The local storage is used so that the user’s personal data does not have to be kept on our DB thus saving the user from unwanted data leakage",
     "The mobile app will serve interfaces that allow users: rate bathrooms, find bathrooms, leave reviews, owners of restrooms can see stats on their restroom, and realtime data such as: waits, ratings, and reviews",
     "Mobile app is written in React Native",
@@ -14,6 +14,17 @@ const Charateristics = [
     "We will also interface with Google’s places api to get vital information such as: commercial locations, recreational locations, parks, other \"expected\" restroom locations"
 ];
 
+const PrototypeCharateristics = [
+    "Local storage will hold information such as: gender and bathroom preferences (Highest Rated, Most Reviews, Best Overall, etc. etc.)",
+    "The local storage is used so that the user’s personal data does not have to be kept on our DB thus saving the user from unwanted data leakage",
+    "The mobile app will serve interfaces that allow users: rate bathrooms, find bathrooms, leave reviews, owners of restrooms can see stats on their restroom, and realtime data such as: waits, ratings, and reviews",
+    "Mobile app is written in React Native",
+    "Our backend systems will be hosted on ODU servers",
+    "We will use MongoDB for a DB and node.js express app for middleware",
+    "Express app will have access to the GIS information given to us via Google’s maps api",
+    "We will also interface with Google’s places api to get vital information such as: commercial locations, recreational locations, parks, other \"expected\" restroom locations"
+];
+
 const MFCD = ({}) => (
     <div className="MFCD">
         <div className="wbs-main-header">
@@ -21,6 +32,25 @@ const MFCD = ({}) => (
         </div>
         <div>
             <img src="images/MFCD.png" alt="MFCD chart" className="MFCD-image" />
+        </div>
+        <div>
+            <ul className="user-stories">
+            {
+                Charateristics.map(MFCD => (
+                    <li>
+                        {
+                            MFCD
+                        }
+                    </li>
+                ))
+            }        
+           </ul>
+        </div>
+        <div className="wbs-main-header">
+            MFCD (Prototype)
+        </div>
+        <div>
+            <img src="images/MFCD-prototype.jpg" alt="MFCD prototype chart" className="MFCD-image" />
         </div>
         <div>
             <ul className="user-stories">
