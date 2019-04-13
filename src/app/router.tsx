@@ -9,6 +9,7 @@ import References from './references';
 import Footer from "./footer";
 import Deliverables from "./deliverables";
 import Glossary from "./glossary";
+import Risks from "./risks";
 
 const HeadingRouter = ({}) => {
     let headerWords = 'Old Dominion University';
@@ -38,6 +39,7 @@ const HeadingRouter = ({}) => {
                     <Link to="/presentations" className="header-link">Presentations</Link>
                     <Link to="/deliverables" className="header-link">Deliverables</Link>
                     <Link to="/references" className="header-link">References</Link>
+                    <Link to="/risks" className="header-link">Risks</Link>
                     <Link to="/glossary" className="header-link">Glossary</Link>
                 
                 </div>
@@ -49,6 +51,7 @@ const HeadingRouter = ({}) => {
                     <Route path="/presentations" component={Presentation} />
                     <Route path="/deliverables" component={Deliverables} />
                     <Route path="/references" component={References} />
+                    <Route path="/risks" component={Risks} />
                     <Route path="/glossary" component={Glossary} />
                 </div>
                 <Footer />
