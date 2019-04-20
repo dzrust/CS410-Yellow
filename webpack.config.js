@@ -1,5 +1,6 @@
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -11,7 +12,8 @@ module.exports = {
                 test: /\.tsx?$/,
                 loader: 'ts-loader',
                 options: {
-                    experimentalWatchApi: true
+                    experimentalWatchApi: true,
+                    transpileOnly: true
                 },
                 include: path.resolve(__dirname, 'src/app')
             }
@@ -21,6 +23,7 @@ module.exports = {
         extensions: ['.tsx', '.ts', '.js']
     },
     plugins: [
+        new ForkTsCheckerWebpackPlugin(),
         new CopyWebpackPlugin(
             [
                 {

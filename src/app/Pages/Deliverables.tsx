@@ -29,19 +29,19 @@ const NON_OWNER_STORIES_NEEDS = [
     'Leave a review',
     'Have multiple preference profiles ',
     'Have the option to ignore preferences and find closest restroom possible (urgent)',
-    
+
 ]
 
 const OWNER_STORIES_NEEDS = [
     'Get my business Skadoosh verified',
     'Add my restroom to the map',
     'Comment/respond to reviews/feedback',
-    'Display information about my bathroom:', 
+    'Display information about my bathroom:',
     '   -Hours of operation',
     '   -Amenities',
     'Update my restroom profile',
     'Receive notification if my restroom gets a bad review or goes under a certain rating ',
-    
+
 ]
 
 const OWNER_STORIES_WISH = [
@@ -93,151 +93,149 @@ export default class Deliverables extends React.Component<{}, {}> {
                     <div className="user-stories-main-header">
                         Geek out with us and check out our flow
                     </div>
-                    <div className="flow-header"> 
-                        In an ideal world 
+                    <div className="flow-header">
+                        In an ideal world
                     </div>
                     <img className="problem-page-flow-image" src="images/problemIdeal.jpg" />
-                    <div className="flow-header"> 
+                    <div className="flow-header">
                         What actually happens
-                    </div> 
-					<img className="problem-page-flow-image" src="images/problemReality.jpg" />
-                
+                    </div>
+                    <img className="problem-page-flow-image" src="images/problemReality.jpg" />
+
                 </div>
-                    <div className="user-stories-main-header">
-                        User Stories
+                <div className="user-stories-main-header">
+                    User Stories
                     </div>
 
-                    <div className="user-stories-header">
-                        Guest
+                <div className="user-stories-header">
+                    Guest
                     </div>
-                    <div className="user-stories-sub-header">
-                        As an Guest I need to:
+                <div className="user-stories-sub-header">
+                    As an Guest I need to:
                     </div>
-                    <div className="user-stories">
-                        <ul>
+                <div className="user-stories">
+                    <ul>
                         {
                             GUEST_NEEDS.map(stories => (
                                 <li>{stories}</li>
                             ))
                         }
-                        </ul>
+                    </ul>
+                </div>
+
+                <div className="user-stories-header">
+                    Non-Owner
                     </div>
-                    
-                    <div className="user-stories-header">
-                        Non-Owner
+                <div className="user-stories-sub-header">
+                    As a non-owner I need to:
                     </div>
-                    <div className="user-stories-sub-header">
-                        As a non-owner I need to:
+                <div className="user-stories">
+                    <ul>
+                        {
+                            NON_OWNER_STORIES_NEEDS.map(stories => (
+                                <li>{stories}</li>
+                            ))
+                        }
+                    </ul>
+                </div>
+                <div className="user-stories-sub-header">
+                    As a non-owner I wish to:
                     </div>
-                    <div className="user-stories">
-                        <ul>
-                            {
-                               NON_OWNER_STORIES_NEEDS.map(stories => (
-                                  <li>{stories}</li>
-                               ))
-                           }
-                       </ul>
-                    </div>
-                    <div className="user-stories-sub-header">
-                        As a non-owner I wish to:
-                    </div>
-                    <div className="user-stories">
-                        <ul>
+                <div className="user-stories">
+                    <ul>
                         {
                             NON_OWNER_STORIES_WISH.map(stories => (
                                 <li>{stories}</li>
                             ))
                         }
-                        </ul>
+                    </ul>
+                </div>
+                <div className="user-stories-header">
+                    Owner
                     </div>
-                    <div className="user-stories-header">
-                        Owner
+                <div className="user-stories-sub-header">
+                    As an owner I need to:
                     </div>
-                    <div className="user-stories-sub-header">
-                        As an owner I need to:
-                    </div>
-                    <div className="user-stories">
-                        <ul>
+                <div className="user-stories">
+                    <ul>
                         {
                             OWNER_STORIES_NEEDS.map(stories => (
                                 <li>{stories}</li>
                             ))
                         }
-                        </ul>
+                    </ul>
+                </div>
+                <div className="user-stories-sub-header">
+                    As an owner I wish to:
                     </div>
-                    <div className="user-stories-sub-header">
-                        As an owner I wish to:
-                    </div>
-                    <div className="user-stories">
-                        <ul>
+                <div className="user-stories">
+                    <ul>
                         {
                             OWNER_STORIES_WISH.map(stories => (
                                 <li>{stories}</li>
                             ))
                         }
-                        </ul>
+                    </ul>
+                </div>
+                <div className="user-stories-header">
+                    Administrator
                     </div>
-                    <div className="user-stories-header">
-                        Administrator
+                <div className="user-stories-sub-header">
+                    As an Administrator I need to:
                     </div>
-                    <div className="user-stories-sub-header">
-                        As an Administrator I need to:
-                    </div>
-                    <div className="user-stories">
-                        <ul>
+                <div className="user-stories">
+                    <ul>
                         {
                             ADMIN_STORIES_NEED.map(stories => (
                                 <li>{stories}</li>
                             ))
                         }
-                        </ul>
+                    </ul>
+                </div>
+                <div className="user-stories-sub-header">
+                    As an Administrator I wish to:
                     </div>
-                    <div className="user-stories-sub-header">
-                        As an Administrator I wish to:
-                    </div>
-                    <div className="user-stories">
-                        <ul>
+                <div className="user-stories">
+                    <ul>
                         {
                             ADMIN_STORIES_WISH.map(stories => (
                                 <li>{stories}</li>
                             ))
                         }
-                        </ul>
-                    </div>
+                    </ul>
+                </div>
                 <div>
                     <div className="wbs-main-header">
                         WBS
                     </div>
-                    <img src="images/WBS.png" alt="WBS" className="mockup-image-2"/>
+                    <img src="images/WBS.png" alt="WBS" className="mockup-image-2" />
                 </div>
 
                 <div>
                     <div className="wbs-main-header">
-                    UI
+                        UI
                     </div>
-                    <img src="images/UIWBS.png" alt="WBS" className="mockup-image-3"/>
+                    <img src="images/UIWBS.png" alt="WBS" className="mockup-image-3" />
                 </div>
 
                 <div>
                     <div className="wbs-main-header">
-                    Algorithm
+                        Algorithm
                     </div>
-                    <img src="images/algorithm.png" alt="WBS" className="mockup-image-5"/>
+                    <img src="images/algorithm.png" alt="WBS" className="mockup-image-5" />
                 </div>
                 <div>
                     <div className="wbs-main-header">
-                    Testing
+                        Testing
                     </div>
-                    <img src="images/testing.png" alt="WBS" className="mockup-image-4"/>
+                    <img src="images/testing.png" alt="WBS" className="mockup-image-4" />
                 </div>
                 <div>
                     <div className="wbs-main-header">
-                    Database
+                        Database
                     </div>
-                    <img src="images/database.png" alt="WBS" className="mockup-image-5"/>
+                    <img src="images/database.png" alt="WBS" className="mockup-image-5" />
                 </div>
-                
-
             </div>
         );
     }

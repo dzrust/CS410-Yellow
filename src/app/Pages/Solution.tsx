@@ -48,7 +48,7 @@ const Solution = () => (
             <div className="mockup-header">
                 Screens from our app
             </div>
-            <Slider autoPlay={true} lazyLoad="progressive" dots={true}>
+            <Slider lazyLoad="progressive" dots={true}>
                 {
                     mockupImages.map((imageUrl) => (
                         <div>
