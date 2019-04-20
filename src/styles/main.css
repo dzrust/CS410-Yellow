@@ -103,6 +103,19 @@ html, body, #app {
     padding: 1rem 1rem 1rem 3rem;
 }
 
+.header-link-sub-container {
+    padding-left: 1rem;
+}
+
+.header-sub-link {
+    display: block;
+    padding: .3rem 0;
+    text-decoration: none;
+    color: #bbb;
+    align-self: center;
+    font-size: 1rem;
+}
+
 .header-link {
     text-decoration: none;
     color: #bbb;
@@ -114,7 +127,7 @@ html, body, #app {
     color: #b8860b;
 }
 
-.header-link:hover {
+.header-link:hover, .header-sub-link:hover {
     color: #b8860b;
 }
 
