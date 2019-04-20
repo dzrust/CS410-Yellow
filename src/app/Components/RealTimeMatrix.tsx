@@ -1,6 +1,6 @@
 import * as React from "react";
-import YesSVG from "./yesSVG";
-import NoSVG from "./noSVG";
+import YesSVG from "./YesSVG";
+import NoSVG from "./NoSVG";
 
 const matrixHeaders = [
     'Features', 'Skadoosh', 'SitorSquat', 'Toilet Finder', 'Flush', 'Where to Wee', 'Bathroom Scout'

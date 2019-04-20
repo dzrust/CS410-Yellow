@@ -1,5 +1,5 @@
 import * as React from "react";
-import MFCD from "./MFCD";
+import MFCD from "../Components/MFCD";
 
 const GUEST_NEEDS = [
     'See a login/sign up page',

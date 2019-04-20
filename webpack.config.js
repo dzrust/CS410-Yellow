@@ -1,19 +1,17 @@
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const path = require('path');
 
 module.exports = {
     mode: 'production',
-    entry: path.resolve(__dirname, 'src/app/index.tsx'),
+    entry: path.resolve(__dirname, 'src/app/Index.tsx'),
     module: {
         rules: [
             {
                 test: /\.tsx?$/,
                 loader: 'ts-loader',
                 options: {
-                    experimentalWatchApi: true,
-                    transpileOnly: true
+                    experimentalWatchApi: true
                 },
                 include: path.resolve(__dirname, 'src/app')
             }
@@ -23,9 +21,6 @@ module.exports = {
         extensions: ['.tsx', '.ts', '.js']
     },
     plugins: [
-        new MiniCssExtractPlugin({
-            filename: 'main.css'
-        }),
         new CopyWebpackPlugin(
             [
                 {
