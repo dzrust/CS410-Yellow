@@ -14,31 +14,23 @@ export default class Glossary extends React.Component<{}, {}> {
     constructor(props: any) {
         super(props);
     }
-
-
+    
     render() {
-        return(
-
+        return (
             <div>
-                
-
-                    <div className="user-stories">
-
+                <div className="user-stories">
                     <h1>
-                    Glossary
-                </h1>
-                        <ul>
+                        Glossary
+                    </h1>
+                    <ul>
                         {
                             GLOSSARY_ENTRIES.map(entries => (
                                 <li>{entries}</li>
-                        
                             ))
                         }
-                        </ul>
-                    </div>
+                    </ul>
+                </div>
             </div>
-
         );
-
     }
 }

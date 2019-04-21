@@ -1,8 +1,8 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import HeadingRouter from "./router";
+import App from "./App";
 
 ReactDOM.render(
-    <HeadingRouter />,
+    <App />,
     document.getElementById("app")
 );

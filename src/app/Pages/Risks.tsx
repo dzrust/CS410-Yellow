@@ -30,7 +30,7 @@ const Risks = () => (
                 Technical Risks
                     </div>
             <div>
-                <ul className="user-stories" style={{"text-align": "left"}}>
+                <ul className="user-stories">
                     {
                         technicalRisks.map(risk => (
                             <li>
@@ -45,7 +45,7 @@ const Risks = () => (
             <div className="problem-page-sub-header-3">
                 Customer Risks
                     </div><div>
-                <ul className="user-stories" style={{"text-align": "left"}}>
+                <ul className="user-stories">
                     {
                         customerRisks.map(risk => (
                             <li>

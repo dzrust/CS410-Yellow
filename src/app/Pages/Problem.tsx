@@ -1,7 +1,7 @@
 import * as React from "react";
-import CompetitionMatrix from "./competitionMatrix";
-import RealTimeMatrix from "./realTimeMatrix";
-import OwnerMatrix from "./OwnerMatrix";
+import CompetitionMatrix from "../Components/CompetitionMatrix";
+import OwnerMatrix from "../Components/OwnerMatrix";
+import RealTimeMatrix from "../Components/RealTimeMatrix";
 
 interface ProblemState {
     displayedHeader: string;
