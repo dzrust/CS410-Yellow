@@ -51,14 +51,12 @@ export default class Header extends React.Component<any, IHeaderState> {
                     <Link to="/wbs" className="header-sub-link">WBS</Link>
                     <Link to="/algorithms" className="header-sub-link">Algorithms</Link>
                     <Link to="/userStories" className="header-sub-link">User Stories</Link>
+                    <Link to="/risks" className="header-sub-link">Risks</Link>
                 </div>
 
             </div>
             <div className="header-link-container">
                 <Link to="/references" className="header-link">References</Link>
-            </div>
-            <div className="header-link-container">
-                <Link to="/risks" className="header-link">Risks</Link>
             </div>
             <div className="header-link-container">
                 <Link to="/glossary" className="header-link">Glossary</Link>
