@@ -23,24 +23,6 @@ export default class Deliverables extends React.Component<{}, {}> {
                     </div>
                     <img className="problem-page-flow-image" src="images/problemReality.jpg" />
                 </div>
-                <div>
-                    <div className="wbs-main-header">
-                        UI
-                    </div>
-                    <img src="images/UIWBS.png" alt="WBS" className="mockup-image-3" />
-                </div>
-                <div>
-                    <div className="wbs-main-header">
-                        Testing
-                    </div>
-                    <img src="images/testing.png" alt="WBS" className="mockup-image-4" />
-                </div>
-                <div>
-                    <div className="wbs-main-header">
-                        Database
-                    </div>
-                    <img src="images/database.png" alt="WBS" className="mockup-image-5" />
-                </div>
             </div>
         );
     }

@@ -110,11 +110,11 @@
     width: 65rem;
 }
 .mockup-image-4 {
-    height: 40rem;
+    height: 55rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 55rem;
+    width: 85rem;
 }
 .mockup-image-5 {
     height: 50rem;
@@ -122,4 +122,20 @@
     margin-left: auto;
     margin-right: auto;
     width: 75rem;
+}
+.mockup-image-6 {
+    height: 65rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45rem;
+}
+.mockup-image-7 {
+    height: 75rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -7rem;
+    margin-bottom: -15rem;
+    width: 125rem;
 }
