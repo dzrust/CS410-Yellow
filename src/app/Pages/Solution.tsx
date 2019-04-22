@@ -1,5 +1,4 @@
 import * as React from "react";
-import MFCD from "../Components/MFCD";
 import Slider from "react-slick";
 
 const Charateristics = [
