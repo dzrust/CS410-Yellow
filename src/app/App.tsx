@@ -19,6 +19,7 @@ import Database from "./Pages/Database";
 import Testing from "./Pages/Testing";
 import Flows from "./Pages/Flows";
 import Labs from "./Pages/Labs";
+import Schema from "./Pages/Schema";
 
 const App = ({ }) => {
     return (
@@ -40,6 +41,7 @@ const App = ({ }) => {
                     <Route path="/userStories" component={UserStories} />
                     <Route path="/references" component={References} />
                     <Route path="/risks" component={Risks} />
+                    <Route path="/schema" component={Schema} />
                     <Route path="/flows" component={Flows} />
                     <Route path="/labs" component={Labs} />
                     <Route path="/glossary" component={Glossary} />
