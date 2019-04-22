@@ -14,6 +14,11 @@ import Risks from "./Pages/Risks";
 import WBS from "./Pages/WBS";
 import Algorithms from "./Pages/Algorithms";
 import UserStories from "./Pages/UserStories";
+import UI from "./Pages/UI";
+import Database from "./Pages/Database";
+import Testing from "./Pages/Testing";
+import Flows from "./Pages/Flows";
+import Labs from "./Pages/Labs";
 
 const App = ({ }) => {
     return (
@@ -29,9 +34,14 @@ const App = ({ }) => {
                     <Route path="/deliverables" component={Deliverables} />
                     <Route path="/wbs" component={WBS} />
                     <Route path="/algorithms" component={Algorithms} />
+                    <Route path="/ui" component={UI} />
+                    <Route path="/database" component={Database} />
+                    <Route path="/testing" component={Testing} />
                     <Route path="/userStories" component={UserStories} />
                     <Route path="/references" component={References} />
                     <Route path="/risks" component={Risks} />
+                    <Route path="/flows" component={Flows} />
+                    <Route path="/labs" component={Labs} />
                     <Route path="/glossary" component={Glossary} />
                 </div>
                 <Footer />
