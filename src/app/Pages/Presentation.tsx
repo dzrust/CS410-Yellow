@@ -23,7 +23,7 @@ const Presentation = () => (
             <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTuVBn2d37GLfZRPUgApZHnUFTOUJd_WtkuQu5XdGa9A1gm5EbyplzpjlqZLEFnIUyYUiZPn_p6NodA/embed?start=true&loop=true&delayms=30000" frameBorder="0" style={{ width: '100%', height: '45rem' }} allowFullScreen={true} />
 
              <div className="presentation-download">
-             <a href="" download>Download Design</a>
+             <a href="downloadable/design.pdf" download>Download Design</a>
              </div>
          </div>
 
