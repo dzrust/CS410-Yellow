@@ -140,12 +140,13 @@
     width: 125rem;
 }
 .mockup-image-8 {
-    height: 75rem;
+    height: 65rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10rem;
-    width: 125rem;
+    width: 85rem;
+    margin-bottom: 3rem;
 }
 .lab-layout {
     display: block;
@@ -153,4 +154,11 @@
     margin-right: auto;
     margin-top: 2.5rem;
     margin-bottom: -5rem;
+}
+.mockup-image-9 {
+    height: 65rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80rem;
 }
