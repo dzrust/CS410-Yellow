@@ -3,7 +3,9 @@ import * as React from "react";
 const Risks = () => (
 
     <div className="risks-page">
-        <h1>Risks</h1>
+        <div className="wbs-main-header">
+        Risks
+        </div>
         <img src="images/risk-matrix.jpg" alt="WBS" className="mockup-image-2" />
         <div>
             <h2>Technical Risks</h2>            
