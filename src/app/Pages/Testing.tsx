@@ -3,7 +3,7 @@ import * as React from "react";
 const Testing = () => (
     <div>
         <div className="wbs-main-header">
-            Database
+            Testing
     </div>
         <img src="images/testing.png" alt="testing" className="mockup-image-5" />
     </div>
