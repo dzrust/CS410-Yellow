@@ -14,8 +14,12 @@ const Risks = () => (
             <h2>Customer Risks</h2>
             <ul>
                 <li>C-1: User mis-use. Users upload fake images. Users don’t leave any feedback. Users leave malicious feedback.</li>
-                <li>C-2: Users may be reluctant to provide feedback because of the subject matter</li>
-                <li>C-3: Location details are inaccurate</li>
+                <li>C-2: Users may be reluctant to provide feedback.</li>
+                <li>C-3: Owner misrepresentation
+    <br></br>-Incorrect location<br></br>
+    -Incorrect picture<br></br>
+    -Incorrect amenities</li>
+                <li>C-4: Excessive notifications could cause users to become agitated and/or delete the app</li>
             </ul>
             <h2>Legal Risks</h2>            
             <ul>
@@ -26,8 +30,10 @@ const Risks = () => (
                 <li>T-1 : Mitigation Strategy: Continual testing to make sure updates are not breaking app function. Usually beta programs or developer accounts are available to help app developers prepare for OS releases.</li>
                 <li>T-2 Mitigation strategy: Consult AWS to ensure the application scales with the growth of users.</li>
                 <li>C-1 Mitigation strategy: Push notifications to remind users to leave feedback. User voting strategy on images and reviews. Users can not up-vote their own images or reviews.</li>
-                <li>C-2 allow users with an account to post under anonymous</li>
-                <li>C-3 allow user to report directions are inaccurate</li>
+                <li>C-2 Allows registered users to post under anonymous</li>
+                <li>C-3 Allow users to report incorrect details and delete accounts with too many reports</li>
+                <li>C-4: We will implement our notification algorithm</li>
+                <li>L-1: Make all users agree to a terms of service</li>
             </ul>
         </div>
     </div>

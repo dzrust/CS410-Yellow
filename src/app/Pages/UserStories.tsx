@@ -2,14 +2,12 @@ import * as React from "react";
 
 const GUEST_NEEDS = [
     'See a login/sign up page',
-    'Create a non-owner and owner profile/accountnces',
+    'Create a non-owner and owner profile/accounts',
     'View map of restrooms closest to my location',
-    'Choose a restroom and get directions',
+    'Choose a restroom',
     'View ratings and reviews',
     'See Skadoosh verified/approved bathrooms',
     'Be prompted to register when I try to leave a review',
-    'Download the app from the respective stores',
-    'See a download link on our website',
 
 ]
 
@@ -27,7 +25,7 @@ const NON_OWNER_STORIES_NEEDS = [
     'Find restroom based on my preferences',
     'Leave a review',
     'Have multiple preference profiles ',
-    'Have the option to ignore preferences and find closest restroom possible (urgent)',
+    'Have the option for default preferences and find closest restroom (Urgent)',
 
 ]
 
@@ -51,6 +49,7 @@ const OWNER_STORIES_WISH = [
 ]
 
 const NON_OWNER_STORIES_WISH = [
+    'Set my gender',
     'Add unverified restroom to the map ',
     'View unverified restrooms created by other users (at their own risk)',
     'Only view Skadoosh approved owner operated restrooms',
@@ -58,7 +57,7 @@ const NON_OWNER_STORIES_WISH = [
     'See pictures of restrooms',
     'Add pictures of a restroom',
     'See what type of amenities a bathroom contains',
-    'Set my gender',
+    
 ]
 
 const ADMIN_STORIES_NEED = [

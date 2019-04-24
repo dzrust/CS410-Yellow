@@ -19,6 +19,7 @@ const mockupImages = [
     'images/mockup-map.png',
     'images/mockup-notification.png',
     'images/mockup-review.png',
+    'images/Mock_Owner.png',
 ]
 
 const Solution = () => (
