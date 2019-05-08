@@ -162,3 +162,32 @@
     margin-right: auto;
     width: 80rem;
 }
+.sprints-images{
+    height: 35rem;
+    width: 65rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sprints-header{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: rgb(121, 8, 8);
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.RWP-header{
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.RWP-images{
+    height: 65rem;
+    width: 45rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

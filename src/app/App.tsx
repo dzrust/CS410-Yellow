@@ -20,6 +20,9 @@ import Testing from "./Pages/Testing";
 import Flows from "./Pages/Flows";
 import Labs from "./Pages/Labs";
 import Schema from "./Pages/Schema";
+import AgileSprints from "./Pages/AgileSprints";
+import PrototypeUserStories from "./Pages/PrototypeUserStories";
+import RWPvsPrototype from "./Pages/RWPvsPrototype";
 
 const App = ({ }) => {
     return (
@@ -45,6 +48,9 @@ const App = ({ }) => {
                     <Route path="/flows" component={Flows} />
                     <Route path="/labs" component={Labs} />
                     <Route path="/glossary" component={Glossary} />
+                    <Route path="/proUserStories" component={PrototypeUserStories} />
+                    <Route path="/sprints" component={AgileSprints} />
+                    <Route path="/RWPvsPrototype" component={RWPvsPrototype}/>
                 </div>
                 <Footer />
             </div>
