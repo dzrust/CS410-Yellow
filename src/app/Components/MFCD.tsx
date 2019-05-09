@@ -15,14 +15,12 @@ const Charateristics = [
 ];
 
 const PrototypeCharateristics = [
-    "Local storage will hold information such as: gender and bathroom preferences (Highest Rated, Most Reviews, Best Overall, etc. etc.)",
-    "The local storage is used so that the user’s personal data does not have to be kept on our DB thus saving the user from unwanted data leakage",
-    "The mobile app will serve interfaces that allow users: rate bathrooms, find bathrooms, leave reviews, owners of restrooms can see stats on their restroom, and realtime data such as: waits, ratings, and reviews",
-    "Mobile app is written in React Native",
-    "Our backend systems will be hosted on ODU servers",
-    "We will use MongoDB for a DB and node.js express app for middleware",
-    "Express app will have access to the GIS information given to us via Google’s maps api",
-    "We will also interface with Google’s places api to get vital information such as: commercial locations, recreational locations, parks, other \"expected\" restroom locations"
+    "The UI will be represented within a web application",
+    "The cloud will be emultaed using ODU VMs",
+    "Within those VMs we will host 2 docker ubuntu images",
+    "On one image there will be resources for a MSSQL Database",
+    "On another image there will be resources for an API using NodeJS and ExpressJS",
+    "The API on the docker image will talk to the MSSQL Database, Firebase, and Google APIs"
 ];
 
 const MFCD = ({}) => (
@@ -50,12 +48,12 @@ const MFCD = ({}) => (
             MFCD (Prototype)
         </div>
         <div>
-            <img src="images/MFCD-prototype.jpg" alt="MFCD prototype chart" className="MFCD-image" />
+            <img src="images/MFCD-prototype.png" alt="MFCD prototype chart" className="MFCD-image" />
         </div>
         <div>
             <ul className="user-stories">
             {
-                Charateristics.map(MFCD => (
+                PrototypeCharateristics.map(MFCD => (
                     <li>
                         {
                             MFCD
