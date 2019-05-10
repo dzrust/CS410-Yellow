@@ -48,7 +48,7 @@ const MFCD = ({}) => (
             MFCD (Prototype)
         </div>
         <div>
-            <img src="images/MFCD-prototype.png" alt="MFCD prototype chart" className="MFCD-image" />
+            <img src="images/MFCD-prototype.png" alt="MFCD prototype chart" className="MFCD-image-2" />
         </div>
         <div>
             <ul className="user-stories">

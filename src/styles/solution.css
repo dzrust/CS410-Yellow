@@ -191,3 +191,12 @@
     margin-left: auto;
     margin-right: auto;
 }
+.MFCD-image-2 {
+    height: 25rem;
+    width: 40rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+}
